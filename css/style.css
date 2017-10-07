@@ -1,7 +1,6 @@
 body {
-    background: fuchsia;
 }
 
-h1 {
-    color: fuchsia;
+.welcome, .home {
+    display: none;
 }
