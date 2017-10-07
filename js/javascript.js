@@ -1,4 +1,4 @@
-let pages = ["home"];
+let pages = ["home", "not"];
 let curPage = 0;
 
 window.addEventListener('load',
