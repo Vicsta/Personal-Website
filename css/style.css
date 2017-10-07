@@ -1,6 +1,15 @@
 body {
 }
 
-.welcome, .home {
+.home {
     display: none;
+}
+
+.welcome {
+    background: white;
+    color: black;
+}
+
+.welcomeFlair {
+    color: darkgrey;
 }
