@@ -16,6 +16,6 @@
     font-size: 100%;
 }
 
-.home, .not{
+.welcome, .home, .not {
     display: none;
 }
