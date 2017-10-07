@@ -18,8 +18,7 @@ window.addEventListener('load',
                 document.getElementsByClassName(check)[0].style.display = "block";
 
                 curPage = pages.indexOf(check);
-            }
-            else {
+            } else {
                 $(".home").fadeIn("slow", function () {
                 });
             }
