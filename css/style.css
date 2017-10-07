@@ -19,3 +19,7 @@
 .welcome, .home, .not {
     display: none;
 }
+
+.home {
+    background: steelblue;
+}
