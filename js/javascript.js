@@ -4,7 +4,7 @@ let curPage = 0;
 window.addEventListener('load',
     function () {
 
-    $(".welcome").fadeIn("slow", function() {
+    $(".welcome").fadeIn(3000, function() {
         $(".welcome").fadeOut("slow", function() {
             (function () {
                 let redirect = sessionStorage.redirect;
@@ -21,7 +21,7 @@ window.addEventListener('load',
 
                     curPage = pages.indexOf(check);
                 } else {
-                    $(".home").fadeIn("slow", function () {
+                    $(".home").fadeIn(2000, function () {
                     });
                 }
             })();
