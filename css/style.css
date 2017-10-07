@@ -1,18 +1,21 @@
-.home {
-    display: none;
-}
-
 .welcome {
     background: white;
     color: black;
-    line-height: 100vh;
+    padding-top: 40vh;
+    font-weight: bold;
 }
 
 .welcomeName {
     display: none;
+    font-size: 350%
 }
 
 .welcomeFlair {
     color: darkgrey;
+    display: none;
+    font-size: 100%;
+}
+
+.home {
     display: none;
 }
