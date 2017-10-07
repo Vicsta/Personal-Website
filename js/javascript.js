@@ -4,7 +4,7 @@ let curPage = 0;
 window.addEventListener('load',
     function () {
         $(".welcomeName").fadeIn(3000, function () {
-            $(".welcomeFlair").fadeIn(3000, function () {
+            $(".welcomeFlair").fadeIn(1500, function () {
                 $(".welcome").fadeOut("slow", function () {
                     (function () {
                         let redirect = sessionStorage.redirect;

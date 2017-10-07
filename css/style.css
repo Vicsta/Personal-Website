@@ -9,9 +9,11 @@
 
 .welcomeName {
     display: none;
+    line-height: 100%;
 }
 
 .welcomeFlair {
     color: darkgrey;
     display: none;
+    line-height: 100%;
 }
