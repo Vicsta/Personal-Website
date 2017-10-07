@@ -19,6 +19,7 @@ window.addEventListener('load',
 
                 curPage = pages.indexOf(check);
             } else {
+                document.getElementsByClassName("welcome")[0].style.display = "block";
                 $(".welcomeName").fadeIn(3000, function () {
                     $(".welcomeFlair").fadeIn(1500, function () {
                         $(".welcome").fadeOut("slow", function () {
