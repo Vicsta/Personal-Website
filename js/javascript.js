@@ -23,7 +23,7 @@ window.addEventListener('load',
                 $(".welcomeName").fadeIn(3000, function () {
                     $(".welcomeFlair").fadeIn(1500, function () {
                         $(".welcome").fadeOut("slow", function () {
-                            $(".home").fadeIn(2000, function () {
+                            $(".all").fadeIn(2000, function () {
                             });
                         });
                     });

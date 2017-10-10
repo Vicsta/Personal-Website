@@ -1,8 +1,14 @@
+body {
+    background: url(../200.gif);
+}
+
 .welcome {
     background: white;
     color: black;
     padding-top: 40vh;
     font-weight: bold;
+    height: 100vh;
+    width: 100vw;
 }
 
 .welcomeName {
@@ -16,12 +22,31 @@
     font-size: 100%;
 }
 
-.welcome, .home, .not {
+.welcome, .all, .not {
     display: none;
 }
 
-.home {
-    background: steelblue;
-    width: 100vw;
+.sideBar {
+    width: 10vw;
+    top: 20vh;
+    left: 0;
+    height: 48vh;
+    outline: solid black .1vw;
+    position: fixed;
+    z-index: 9001;
+}
+
+.barLink {
+    width: 100%;
+    height: 12vh;
+    line-height: 12vh;
+    font-size: 1.5vw;
+}
+
+.home, .about, .exp, .contact {
+    width: 60vw;
     height: 100vh;
+    margin-left: 25vw;
+    outline: 0.1vw black solid;
+    background:transparent;
 }
