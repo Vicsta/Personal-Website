@@ -82,22 +82,16 @@ body {
     height: 100%;
 }
 
-.leaf0 {
+.leaf0, .leaf1{
     position: fixed;
-    width: 60px;
-    height: 60px;
     background: url(../images/BlackLeaf0.png) no-repeat;
     background-size: contain;
     z-index: -500;
+    display: none;
 }
 
 .leaf1 {
     background: url(../images/BlackLeaf1.png) no-repeat;
-    position: fixed;
-    width: 60px;
-    height: 60px;
-    background-size: contain;
-    z-index: -500;
 }
 
 .snowflake0 {

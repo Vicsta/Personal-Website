@@ -20,186 +20,246 @@ window.addEventListener('load',
                 curPage = pages.indexOf(check);
             } else {
                 document.getElementsByClassName("welcome")[0].style.display = "block";
-                $(".welcomeName").fadeIn(1700, function () {
-                    $(".welcomeFlair").fadeIn(1000, function () {
-                        setTimeout(function() {
-                        $(".welcome").fadeOut(1000, function () {
-                            $(".all").fadeIn(1500, function () {
+                let numLeaves = 60;
+                let numSnow = 0;
+                let curLeaves = 0;
+                let curSnow = 0;
 
-                                /*
+                window.addEventListener("scroll", function () {
+                    let cur = (document.documentElement.scrollTop || document.body.scrollTop);
+                    let loc = cur / ((document.documentElement.scrollHeight || document.body.scrollHeight) - window.innerHeight) * 100;
+                    if (loc < 25) {
+                        numLeaves = 30;
+                        numSnow = 0;
+                    } else if (loc < 50) {
+                        numLeaves = 70;
+                        numSnow = 10;
+                    } else if (loc < 75) {
+                        numLeaves = 20;
+                        numSnow = 120;
+                    } else {
+                        numLeaves = 20;
+                        numSnow = 10;
+                    }
+                });
+
+                /*
                                 PROCEDURE TO CONTROL BACKGROUND ANIMATIONS
                                  */
 
-                                let height = document.documentElement.clientHeight;
+                let height = document.documentElement.clientHeight;
 
-                                let width = Math.max(
-                                    document.documentElement.clientWidth,
-                                    document.body.scrollWidth,
-                                    document.documentElement.scrollWidth,
-                                    document.body.offsetWidth,
-                                    document.documentElement.offsetWidth
-                                );
+                let width = Math.max(
+                    document.documentElement.clientWidth,
+                    document.body.scrollWidth,
+                    document.documentElement.scrollWidth,
+                    document.body.offsetWidth,
+                    document.documentElement.offsetWidth
+                );
 
-                                window.addEventListener("resize", function() {
-                                    height = document.documentElement.clientHeight;
+                window.addEventListener("resize", function () {
+                    height = document.documentElement.clientHeight;
 
 
-                                    width = Math.max(
-                                        document.documentElement.clientWidth,
-                                        document.body.scrollWidth,
-                                        document.documentElement.scrollWidth,
-                                        document.body.offsetWidth,
-                                        document.documentElement.offsetWidth
-                                    );
+                    width = Math.max(
+                        document.documentElement.clientWidth,
+                        document.body.scrollWidth,
+                        document.documentElement.scrollWidth,
+                        document.body.offsetWidth,
+                        document.documentElement.offsetWidth
+                    );
+                });
+
+                let dir = [];
+                let speed = [];
+                let grav = [];
+                let wind = [];
+                let rot = [];
+                let delta = [];
+
+                function createChild(parent, childName) {
+
+                    let bound = parent.getBoundingClientRect();
+                    let startX = ((Math.random() * (bound.right - bound.left)) + bound.left) + "px";
+                    let startY = ((Math.random() * (bound.bottom - bound.top)) + bound.top) + "px";
+
+                    let newChild = document.createElement("div");
+
+                    newChild.style.top = startY;
+                    newChild.style.left = startX;
+                    newChild.style.transform = randomRotate();
+                    let z = newChild.style.transform.split(" ")[2].replace("rotateZ(", "").replace("deg)", "");
+                    grav.push(Math.random() / 6 + 0.3);
+                    speed.push(Math.random() / 6 + 1);
+                    if (childName === "leaf") {
+                        wind.push(Math.random() / 4 + 0.5);
+                        newChild.className = childName + Math.floor(Math.random() * 2);
+                        let random = Math.random() * 15;
+                        newChild.style.width = (60 - random) + "px";
+                        newChild.style.height = (60 - random) + "px";
+                    } else {
+                        wind.push(0.2);
+                        newChild.className = childName + Math.floor(Math.random());
+                        let random = Math.random() * 5;
+                        newChild.style.width = (10 - random) + "px";
+                        newChild.style.height = (10 - random) + "px";
+                    }
+                    rot.push(Math.random() / 4 + 0.3);
+                    delta.push(Math.random() * 40 - 20);
+                    if (z < 90) {
+                        dir.push(-1);
+                    } else {
+                        dir.push(1);
+                    }
+
+                    document.getElementsByClassName("container")[0].appendChild(newChild);
+                    $(newChild).fadeIn("slow");
+                }
+
+                function randomRotate() {
+                    let x = Math.random() * 10;
+                    let y = Math.random() * 30 - 15;
+                    let z = Math.random() * 180;
+                    return "rotateX(" + x + "deg) rotateY(" + y + "deg) rotateZ(" + z + "deg)";
+                }
+
+                //Animates the children of a given parent to fall
+                function animate(parent) {
+                    if (curLeaves < numLeaves) {
+                        for (let i = 0; i < (numLeaves - curLeaves); i++) {
+                            setTimeout(function () {
+                                createChild(document.getElementsByClassName("tree")[0], "leaf");
+                            }, 300 * i);
+                            curLeaves++;
+                        }
+                    }
+
+                    if (curSnow < numSnow) {
+                        for (let i = 0; i < (numSnow - curSnow); i++) {
+                            setTimeout(function () {
+                                createChild(document.getElementsByClassName("sky")[0], "snowflake");
+                            }, 200 * i);
+                            curSnow++;
+                        }
+                    }
+
+                    for (let i = 0; i < parent.children.length; i++) {
+                        let child = parent.children[i];
+                        let z = child.style.transform.split(" ")[2].replace("rotateZ(", "").replace("deg)", "");
+                        let dx = speed[i];
+                        let dy = Math.random() * 2 * Math.abs(Math.cos(z * Math.PI / 180));
+                        if (child.className.indexOf("leaf") >= 0) {
+                            child.style.top = (child.style.top.replace("px", "") - (0.2 * Math.sin(z / 180 * Math.PI)) + grav[i] + "px");
+                        } else {
+                            child.style.top = (child.style.top.replace("px", "") - 0 + grav[i] + "px");
+                        }
+                        child.style.left = (child.style.left.replace("px", "") - 0 - (0.1 * Math.sin(z / 180 * Math.PI)) + (dir[i] * speed[i] * 1.5) + wind[i]) + "px";
+
+                        if ((child.style.top.replace("px", "") - 0 + dy) > height || (child.style.left.replace("px", "") - 0 + dx) > width || (child.style.left.replace("px", "") - 0 + dx) < -500) {
+                            parent.removeChild(child);
+                            dir.splice(i, 1);
+                            speed.splice(i, 1);
+                            wind.splice(i, 1);
+                            grav.splice(i, 1);
+                            rot.splice(i, 1);
+                            delta.splice(i, 1);
+                            if (child.className.indexOf("leaf") >= 0) {
+                                curLeaves--;
+                            } else {
+                                curSnow--;
+                            }
+                            i--;
+                        } else {
+                            if (z >= 92 && dir[i] === -1) {
+                                if (speed[i] > 0) {
+                                    speed[i] -= speed[i] / 50;
+                                }
+                            } else if (z >= 100 && dir[i] === 1) {
+                                if (speed[i] < 1.1) {
+                                    speed[i] += 0.03;
+                                }
+                            } else if (z <= 80 && dir[i] === -1) {
+                                if (speed[i] < 1.1) {
+                                    speed[i] += 0.03;
+                                }
+                            } else if (z <= 88 && dir[i] === 1) {
+                                if (speed[i] > 0) {
+                                    speed[i] -= speed[i] / 50;
+                                }
+                            }
+
+                            if (z <= 92 && z >= 88) {
+                                speed[i] = 1 + (Math.random() / 4);
+                            }
+
+                            if ((z <= 140 && dir[i] === -1 && speed[i] > 0.22) || (z >= 20 && dir[i] === 1 && speed[i] > 0.22)) {
+                                z = z - (dir[i] * rot[i]);
+                            }
+
+                            if (z >= 110 && speed[i] <= 0.2 && dir[i] === -1) {
+                                dir[i] = 1;
+                            } else if (z < 70 && speed[i] <= 0.2 && dir[i] === 1) {
+                                dir[i] = -1;
+                            }
+
+                            let x = child.style.transform.split(" ")[0].replace("rotateX(", "").replace("deg)", "");
+                            if (x > 0 + delta[i] && dir[i] === -1) {
+                                x = x - Math.random() / 2;
+                            } else if (x < 40 + delta[i] && dir[i] === 1) {
+                                x = x - 0 + Math.random() / 2;
+                            }
+
+                            let y = child.style.transform.split(" ")[1].replace("rotateY(", "").replace("deg)", "");
+                            if (y > 0 + delta[i] && dir[i] === -1) {
+                                y = y - Math.random() / 2;
+                            } else if (y < 40 + delta[i] && dir[i] === 1) {
+                                y = y - 0 + Math.random() / 2;
+                            }
+
+                            child.style.transform = "rotateX(" + x + "deg) rotateY(" + y + "deg) rotateZ(" + z + "deg)";
+                        }
+                    }
+                }
+
+                setInterval(function () {
+                    animate(document.getElementsByClassName("container")[0]);
+                }, 10);
+
+                /*
+                END OF PROCEDURE
+                 */
+                $(".welcomeName").fadeIn(1700, function () {
+                    $(".welcomeFlair").fadeIn(1000, function () {
+                        setTimeout(function () {
+                            $(".welcome").fadeOut(1000, function () {
+
+                                $(".homeBar").click(function() {
+                                    $('html,body').animate({
+                                            scrollTop: $(".home").offset().top},
+                                        'slow');
                                 });
 
-                                let dir = [];
-                                let speed = [];
-                                let grav = [];
-                                let wind = [];
-                                let rot = [];
-                                let delta = [];
+                                $(".aboutBar").click(function() {
+                                    $('html,body').animate({
+                                            scrollTop: $(".about").offset().top},
+                                        'slow');
+                                });
 
-                                function createChild(parent, childName) {
+                                $(".experienceBar").click(function() {
+                                    $('html,body').animate({
+                                            scrollTop: $(".exp").offset().top},
+                                        'slow');
+                                });
 
-                                    let bound = parent.getBoundingClientRect();
-                                    let startX = ((Math.random() * (bound.right - bound.left)) + bound.left) + "px";
-                                    let startY = ((Math.random() * (bound.bottom - bound.top)) + bound.top) + "px";
+                                $(".contactBar").click(function() {
+                                    $('html,body').animate({
+                                            scrollTop: $(".contact").offset().top},
+                                        'slow');
+                                });
 
-                                    let newChild = document.createElement("div");
-
-                                    newChild.style.top = startY;
-                                    newChild.style.left = startX;
-                                    newChild.style.transform = randomRotate();
-                                    let z = newChild.style.transform.split(" ")[2].replace("rotateZ(", "").replace("deg)", "");
-                                    grav.push(Math.random() / 6 + 0.3);
-                                    speed.push(Math.random() / 6 + 1);
-                                    if(childName === "leaf") {
-                                        wind.push(Math.random() / 4 + 0.5);
-                                        newChild.className = childName + Math.floor(Math.random() * 2);
-                                        let random = Math.random()* 15;
-                                        newChild.style.width = (60 - random) + "px";
-                                        newChild.style.height = (60 - random) + "px";
-                                    } else {
-                                        wind.push(0.2);
-                                        newChild.className = childName +  Math.floor(Math.random());
-                                        let random = Math.random()* 5;
-                                        newChild.style.width = (10 - random) + "px";
-                                        newChild.style.height = (10 - random) + "px";
-                                    }
-                                    rot.push(Math.random() / 4 + 0.3);
-                                    delta.push(Math.random() * 40 - 20);
-                                    if(z < 90) {
-                                        dir.push(-1);
-                                    } else {
-                                        dir.push(1);
-                                    }
-
-                                    document.getElementsByClassName("container")[0].appendChild(newChild);
-                                }
-
-                                function randomRotate() {
-                                    let x = Math.random() * 10;
-                                    let y = Math.random() * 30 - 15;
-                                    let z = Math.random() * 180;
-                                    return "rotateX(" + x + "deg) rotateY(" + y + "deg) rotateZ(" + z + "deg)";
-                                }
-
-                                //Animates the children of a given parent to fall
-                                function animate(parent) {
-                                    for(let i = 0; i < parent.children.length; i ++) {
-                                        let child = parent.children[i];
-                                        let z = child.style.transform.split(" ")[2].replace("rotateZ(", "").replace("deg)", "");
-                                        let dx = speed[i];
-                                        let dy = Math.random() * 2 * Math.abs(Math.cos(z * Math.PI / 180));
-                                        if(child.className.indexOf("leaf") >= 0) {
-                                            child.style.top = (child.style.top.replace("px", "") - (0.2 * Math.sin(z / 180 * Math.PI)) + grav[i] + "px");
-                                        } else {
-                                            child.style.top = (child.style.top.replace("px", "") - 0 + grav[i] + "px");
-                                        }
-                                        child.style.left = (child.style.left.replace("px", "") - 0 - (0.1 * Math.sin(z / 180 * Math.PI)) + (dir[i] * speed[i] * 1.5) + wind[i]) + "px";
-
-                                        if((child.style.top.replace("px", "") - 0 + dy) > height || (child.style.left.replace("px", "") - 0 + dx) > width || (child.style.left.replace("px", "") - 0 + dx) < -500) {
-                                            parent.removeChild(child);
-                                            dir.splice(i, 1);
-                                            speed.splice(i, 1);
-                                            wind.splice(i, 1);
-                                            grav.splice(i, 1);
-                                            rot.splice(i, 1);
-                                            delta.splice(i, 1);
-                                            if(child.className.indexOf("leaf") >= 0) {
-                                                createChild(document.getElementsByClassName("tree")[0], child.className.substring(0, child.className.length - 1));
-                                            } else {
-                                                createChild(document.getElementsByClassName("sky")[0], child.className.substring(0, child.className.length - 1));
-                                            }
-                                            i--;
-                                        } else {
-                                            if(z >= 92 && dir[i] === -1) {
-                                                if(speed[i] > 0) {
-                                                    speed[i] -= speed[i] / 50;
-                                                }
-                                            } else if(z >= 100 && dir[i] === 1) {
-                                                if(speed[i] < 1.1) {
-                                                    speed[i] += 0.03;
-                                                }
-                                            } else if(z <= 80 && dir[i] === -1) {
-                                                if(speed[i] < 1.1) {
-                                                    speed[i] += 0.03;
-                                                }
-                                            } else if(z <= 88 && dir[i] === 1) {
-                                                if(speed[i] > 0) {
-                                                    speed[i] -= speed[i] / 50;
-                                                }
-                                            }
-
-                                            if(z <= 92 && z >= 88) {
-                                                speed[i] = 1 + (Math.random() / 4);
-                                            }
-
-                                            if((z <= 140 && dir[i] === -1 && speed[i] > 0.22) || (z >= 20 && dir[i] === 1 && speed[i] > 0.22)) {
-                                                z = z - (dir[i] * rot[i]);
-                                            }
-
-                                            if(z >= 110 && speed[i] <= 0.2 && dir[i] === -1) {
-                                                dir[i] = 1;
-                                            } else if(z < 70 && speed[i] <= 0.2 && dir[i] === 1) {
-                                                dir[i] = -1;
-                                            }
-
-                                            let x = child.style.transform.split(" ")[0].replace("rotateX(", "").replace("deg)", "");
-                                            if(x > 0 + delta[i] && dir[i] === -1) {
-                                                x = x - Math.random() / 2;
-                                            } else if(x < 40 + delta[i] && dir[i] === 1) {
-                                                x = x - 0 + Math.random() / 2;
-                                            }
-
-                                            let y = child.style.transform.split(" ")[1].replace("rotateY(", "").replace("deg)", "");
-                                            if(y > 0 + delta[i] && dir[i] === -1) {
-                                                y = y - Math.random() / 2;
-                                            } else if(y < 40 + delta[i] && dir[i] === 1) {
-                                                y = y - 0 + Math.random() / 2;
-                                            }
-
-                                            child.style.transform = "rotateX(" + x + "deg) rotateY(" + y + "deg) rotateZ(" + z + "deg)";
-                                        }
-                                    }
-                                }
-                                for(let i = 0; i < 100; i ++) {
-                                    setTimeout(function(){ createChild(document.getElementsByClassName("sky")[0], "snowflake"); }, 200 * i);
-                                    if(i <= 50) {
-                                        setTimeout(function(){ createChild(document.getElementsByClassName("tree")[0], "leaf"); }, 300 * i);
-                                    }
-                                }
-
-                                setInterval(function() { animate(document.getElementsByClassName("sky")[0]); }, 10);
-                                setInterval(function() { animate(document.getElementsByClassName("container")[0]); }, 10);
-
-                                /*
-                                END OF PROCEDURE
-                                 */
-
+                                $(".all").fadeIn(1500, function () {
+                                });
                             });
-                        });
                         }, 1400);
                     });
                 });
