@@ -71,7 +71,7 @@ window.addEventListener('load',
                                     newChild.style.left = startX;
                                     newChild.style.transform = randomRotate();
                                     let z = newChild.style.transform.split(" ")[2].replace("rotateZ(", "").replace("deg)", "");
-                                    grav.push(Math.random() / 4 + 0.4);
+                                    grav.push(Math.random() / 6 + 0.3);
                                     speed.push(Math.random() / 6 + 1);
                                     if(childName === "leaf") {
                                         wind.push(Math.random() / 4 + 0.5);

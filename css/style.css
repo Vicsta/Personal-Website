@@ -1,5 +1,22 @@
 body {
+    background: url(../images/bkgd2.png) no-repeat fixed;
+    background-size: 100% 100%;
+}
 
+::-webkit-scrollbar
+{
+    width: 0.5vw;  /* for vertical scrollbars */
+    height: 0.5vw; /* for horizontal scrollbars */
+}
+
+::-webkit-scrollbar-track
+{
+    background: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-thumb
+{
+    background: rgba(0, 0, 0, 0.5);
 }
 
 .welcome {
@@ -94,10 +111,10 @@ body {
 .tree {
     visibility: hidden;
     position: fixed;
-    top: 10vh;
-    left: 10vw;
-    height: 10vh;
-    width: 20vw;
+    top: 20vh;
+    left: 2vw;
+    height: 17vh;
+    width: 22vw;
     background: red;
 }
 
