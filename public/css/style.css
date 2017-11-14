@@ -1,0 +1,112 @@
+body {
+
+}
+
+.welcome {
+    background: white;
+    color: black;
+    padding-top: 40vh;
+    font-weight: bold;
+    height: 100vh;
+    width: 100vw;
+}
+
+.welcomeName {
+    display: none;
+    font-size: 350%
+}
+
+.welcomeFlair {
+    color: darkgrey;
+    display: none;
+    font-size: 100%;
+}
+
+.welcome, .all, .not {
+    display: none;
+    z-index: 9001;
+}
+
+.sideBar {
+    width: 8vw;
+    top: 24vh;
+    left: 0;
+    height: 40vh;
+    outline: solid black .1vw;
+    position: fixed;
+    background: white;
+}
+
+.barLink {
+    width: 100%;
+    height: 10vh;
+    line-height: 10vh;
+    font-size: 1vw;
+}
+
+.barLink:hover {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.home, .about, .exp, .contact {
+    margin-top: 10vh;
+    width: 60vw;
+    height: 100vh;
+    margin-left: 25vw;
+    outline: 0.1vw black solid;
+    background: white;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+.leaf0 {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    background: url(../images/BlackLeaf0.png) no-repeat;
+    background-size: contain;
+    z-index: -500;
+}
+
+.leaf1 {
+    background: url(../images/BlackLeaf1.png) no-repeat;
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+    z-index: -500;
+}
+
+.snowflake0 {
+    background: url(../images/Snowflake0.png) no-repeat;
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    background-size: contain;
+    z-index: -500;
+}
+
+.tree {
+    visibility: hidden;
+    position: fixed;
+    top: 10vh;
+    left: 10vw;
+    height: 10vh;
+    width: 20vw;
+    background: red;
+}
+
+.sky {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 10vh;
+    width: 100vw;
+    background: skyblue;
+}
