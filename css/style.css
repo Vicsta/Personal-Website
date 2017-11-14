@@ -69,6 +69,7 @@ body {
 
 .home, .about, .exp, .contact {
     margin-top: 10vh;
+    margin-bottom: 6vh;
     width: 60vw;
     height: 100vh;
     margin-left: 25vw;
@@ -93,8 +94,8 @@ body {
 .leaf1 {
     background: url(../images/BlackLeaf1.png) no-repeat;
     position: fixed;
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     background-size: contain;
     z-index: -500;
 }
@@ -111,7 +112,7 @@ body {
 .tree {
     visibility: hidden;
     position: fixed;
-    top: 20vh;
+    top: 18vh;
     left: 2vw;
     height: 17vh;
     width: 22vw;

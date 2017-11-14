@@ -20,10 +20,11 @@ window.addEventListener('load',
                 curPage = pages.indexOf(check);
             } else {
                 document.getElementsByClassName("welcome")[0].style.display = "block";
-                $(".welcomeName").fadeIn(30, function () {
-                    $(".welcomeFlair").fadeIn(15, function () {
-                        $(".welcome").fadeOut("slow", function () {
-                            $(".all").fadeIn(20, function () {
+                $(".welcomeName").fadeIn(1700, function () {
+                    $(".welcomeFlair").fadeIn(1000, function () {
+                        setTimeout(function() {
+                        $(".welcome").fadeOut(1000, function () {
+                            $(".all").fadeIn(1500, function () {
 
                                 /*
                                 PROCEDURE TO CONTROL BACKGROUND ANIMATIONS
@@ -76,9 +77,15 @@ window.addEventListener('load',
                                     if(childName === "leaf") {
                                         wind.push(Math.random() / 4 + 0.5);
                                         newChild.className = childName + Math.floor(Math.random() * 2);
+                                        let random = Math.random()* 15;
+                                        newChild.style.width = (60 - random) + "px";
+                                        newChild.style.height = (60 - random) + "px";
                                     } else {
                                         wind.push(0.2);
                                         newChild.className = childName +  Math.floor(Math.random());
+                                        let random = Math.random()* 5;
+                                        newChild.style.width = (10 - random) + "px";
+                                        newChild.style.height = (10 - random) + "px";
                                     }
                                     rot.push(Math.random() / 4 + 0.3);
                                     delta.push(Math.random() * 40 - 20);
@@ -98,7 +105,7 @@ window.addEventListener('load',
                                     return "rotateX(" + x + "deg) rotateY(" + y + "deg) rotateZ(" + z + "deg)";
                                 }
 
-//Animates the children of a given parent to fall
+                                //Animates the children of a given parent to fall
                                 function animate(parent) {
                                     for(let i = 0; i < parent.children.length; i ++) {
                                         let child = parent.children[i];
@@ -193,6 +200,7 @@ window.addEventListener('load',
 
                             });
                         });
+                        }, 1400);
                     });
                 });
             }
