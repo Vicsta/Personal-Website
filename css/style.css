@@ -136,9 +136,9 @@ body {
 .tree {
     visibility: hidden;
     position: fixed;
-    top: 18vh;
+    top: 15vh;
     left: 2vw;
-    height: 30vh;
+    height: 25vh;
     width: 22vw;
     background: red;
 }

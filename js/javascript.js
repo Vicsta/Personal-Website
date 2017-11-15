@@ -34,7 +34,7 @@ window.addEventListener('load',
 
                 window.addEventListener("scroll", scrolled);
 
-                let wait = 1000;
+                let wait = 800;
 
                 setInterval(function() {
                     if(didScroll) {
@@ -44,21 +44,20 @@ window.addEventListener('load',
                         if (loc < 25) {
                             numLeaves = 60;
                             numSnow = 0;
-                            wait = 1000;
+                            wait = 800;
                         } else if (loc < 50) {
                             numLeaves = 100;
                             numSnow = 20;
-                            wait = 1000;
+                            wait = 500;
                         } else if (loc < 75) {
                             numLeaves = 20;
                             numSnow = 110;
-                            wait = 1000;
+                            wait = 600;
                         } else {
                             numLeaves = 35;
                             numSnow = 25;
                             wait = 1000;
                         }
-                        console.log('You scrolled');
                         window.addEventListener("scroll", scrolled);
                     }
                 }, 750);
@@ -98,8 +97,6 @@ window.addEventListener('load',
                 let delta = [];
 
                 function createChild(parent, childName) {
-                    console.log("making");
-
                     let bound = parent.getBoundingClientRect();
                     let startX = ((Math.random() * (bound.right - bound.left)) + bound.left) + "px";
                     let startY = ((Math.random() * (bound.bottom - bound.top)) + bound.top) + "px";
@@ -146,9 +143,10 @@ window.addEventListener('load',
 
                 //Animates the children of a given parent to fall
                 function animate(parent) {
+
                     if (curLeaves < numLeaves) {
-                        for (let i = 0; i < (numLeaves - curLeaves) && ((curLeaves + curSnow) < (numLeaves + numSnow)); i++) {
-                            console.log(wait * i);
+                        let bound = (numLeaves - curLeaves);
+                        for (let i = 0; i < bound; i++) {
                             setTimeout(function () {
                                 createChild(document.getElementsByClassName("tree")[0], "leaf");
                             }, (wait * i));
@@ -157,7 +155,8 @@ window.addEventListener('load',
                     }
 
                     if (curSnow < numSnow) {
-                        for (let i = 0; i < (numSnow - curSnow) && ((curLeaves + curSnow) < (numLeaves + numSnow)); i++) {
+                        let bound = (numSnow - curSnow);
+                        for (let i = 0; i < bound; i++) {
                             setTimeout(function () {
                                 createChild(document.getElementsByClassName("sky")[0], "snowflake");
                             }, ((wait + 100) * i));
@@ -250,10 +249,10 @@ window.addEventListener('load',
                 /*
                 END OF PROCEDURE
                  */
-                $(".welcomeName").fadeIn(1700, function () {
-                    $(".welcomeFlair").fadeIn(1000, function () {
+                $(".welcomeName").fadeIn(17, function () {
+                    $(".welcomeFlair").fadeIn(10, function () {
                         setTimeout(function () {
-                            $(".welcome").fadeOut(1000, function () {
+                            $(".welcome").fadeOut(10, function () {
 
                                 $(".homeBar").click(function() {
                                     $('html,body').animate({
@@ -303,10 +302,10 @@ window.addEventListener('load',
                                     press = !press;
                                 });
 
-                                $(".all").fadeIn(1500, function () {
+                                $(".all").fadeIn(15, function () {
                                 });
                             });
-                        }, 1400);
+                        }, 14);
                     });
                 });
             }
