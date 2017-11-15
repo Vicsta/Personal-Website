@@ -25,23 +25,37 @@ window.addEventListener('load',
                 let curLeaves = 0;
                 let curSnow = 0;
 
-                window.addEventListener("scroll", function () {
-                    let cur = (document.documentElement.scrollTop || document.body.scrollTop);
-                    let loc = cur / ((document.documentElement.scrollHeight || document.body.scrollHeight) - window.innerHeight) * 100;
-                    if (loc < 25) {
-                        numLeaves = 50;
-                        numSnow = 0;
-                    } else if (loc < 50) {
-                        numLeaves = 100;
-                        numSnow = 20;
-                    } else if (loc < 75) {
-                        numLeaves = 30;
-                        numSnow = 120;
-                    } else {
-                        numLeaves = 35;
-                        numSnow = 15;
+                let didScroll = false;
+
+                function scrolled() {
+                    didScroll = true;
+                    window.removeEventListener("scroll", scrolled);
+                }
+
+                window.addEventListener("scroll", scrolled);
+
+                setInterval(function() {
+                    if(didScroll) {
+                        didScroll = false;
+                        let cur = (document.documentElement.scrollTop || document.body.scrollTop);
+                        let loc = cur / ((document.documentElement.scrollHeight || document.body.scrollHeight) - window.innerHeight) * 100;
+                        if (loc < 25) {
+                            numLeaves = 50;
+                            numSnow = 0;
+                        } else if (loc < 50) {
+                            numLeaves = 100;
+                            numSnow = 20;
+                        } else if (loc < 75) {
+                            numLeaves = 30;
+                            numSnow = 120;
+                        } else {
+                            numLeaves = 35;
+                            numSnow = 15;
+                        }
+                        console.log('You scrolled');
+                        window.addEventListener("scroll", scrolled);
                     }
-                });
+                }, 750);
 
                 /*
                                 PROCEDURE TO CONTROL BACKGROUND ANIMATIONS
