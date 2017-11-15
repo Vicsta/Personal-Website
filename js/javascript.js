@@ -52,7 +52,7 @@ window.addEventListener('load',
                         } else if (loc < 75) {
                             numLeaves = 20;
                             numSnow = 110;
-                            wait = 600;
+                            wait = 300;
                         } else {
                             numLeaves = 35;
                             numSnow = 25;
@@ -249,10 +249,10 @@ window.addEventListener('load',
                 /*
                 END OF PROCEDURE
                  */
-                $(".welcomeName").fadeIn(17, function () {
-                    $(".welcomeFlair").fadeIn(10, function () {
+                $(".welcomeName").fadeIn(1700, function () {
+                    $(".welcomeFlair").fadeIn(1000, function () {
                         setTimeout(function () {
-                            $(".welcome").fadeOut(10, function () {
+                            $(".welcome").fadeOut(1000, function () {
 
                                 $(".homeBar").click(function() {
                                     $('html,body').animate({
@@ -302,10 +302,10 @@ window.addEventListener('load',
                                     press = !press;
                                 });
 
-                                $(".all").fadeIn(15, function () {
+                                $(".all").fadeIn(1500, function () {
                                 });
                             });
-                        }, 14);
+                        }, 1400);
                     });
                 });
             }
