@@ -34,23 +34,29 @@ window.addEventListener('load',
 
                 window.addEventListener("scroll", scrolled);
 
+                let wait = 1000;
+
                 setInterval(function() {
                     if(didScroll) {
                         didScroll = false;
                         let cur = (document.documentElement.scrollTop || document.body.scrollTop);
                         let loc = cur / ((document.documentElement.scrollHeight || document.body.scrollHeight) - window.innerHeight) * 100;
                         if (loc < 25) {
-                            numLeaves = 50;
+                            numLeaves = 60;
                             numSnow = 0;
+                            wait = 1000;
                         } else if (loc < 50) {
                             numLeaves = 100;
                             numSnow = 20;
+                            wait = 1000;
                         } else if (loc < 75) {
                             numLeaves = 20;
-                            numSnow = 100;
+                            numSnow = 110;
+                            wait = 1000;
                         } else {
                             numLeaves = 35;
-                            numSnow = 15;
+                            numSnow = 25;
+                            wait = 1000;
                         }
                         console.log('You scrolled');
                         window.addEventListener("scroll", scrolled);
@@ -92,6 +98,7 @@ window.addEventListener('load',
                 let delta = [];
 
                 function createChild(parent, childName) {
+                    console.log("making");
 
                     let bound = parent.getBoundingClientRect();
                     let startX = ((Math.random() * (bound.right - bound.left)) + bound.left) + "px";
@@ -138,23 +145,32 @@ window.addEventListener('load',
                 }
 
                 //Animates the children of a given parent to fall
+                let add = true;
                 function animate(parent) {
-                    if (curLeaves < numLeaves) {
-                        for (let i = 0; i < (numLeaves - curLeaves) && ((curLeaves + curSnow)< (numLeaves + numSnow)); i++) {
-                            setTimeout(function () {
-                                createChild(document.getElementsByClassName("tree")[0], "leaf");
-                            }, 300 * i);
-                            curLeaves++;
-                        }
-                    }
+                    if(add) {
+                        add = !add;
+                        setTimeout(function() {
+                            if (curLeaves < numLeaves) {
+                                for (let i = 0; i < (numLeaves - curLeaves) && ((curLeaves + curSnow) < (numLeaves + numSnow)); i++) {
+                                    console.log(wait * i);
+                                    setTimeout(function () {
+                                        createChild(document.getElementsByClassName("tree")[0], "leaf");
+                                    }, wait * i);
+                                    curLeaves++;
+                                }
+                            }
 
-                    if (curSnow < numSnow) {
-                        for (let i = 0; i < (numSnow - curSnow) && ((curLeaves + curSnow) < (numLeaves + numSnow)); i++) {
-                            setTimeout(function () {
-                                createChild(document.getElementsByClassName("sky")[0], "snowflake");
-                            }, 200 * i);
-                            curSnow++;
-                        }
+                            if (curSnow < numSnow) {
+                                for (let i = 0; i < (numSnow - curSnow) && ((curLeaves + curSnow) < (numLeaves + numSnow)); i++) {
+                                    setTimeout(function () {
+                                        createChild(document.getElementsByClassName("sky")[0], "snowflake");
+                                    }, (wait + 100) * i);
+                                    curSnow++;
+                                }
+                            }
+
+                            add = !add;
+                        }, 5000);
                     }
 
                     for (let i = 0; i < parent.children.length; i++) {
