@@ -46,8 +46,8 @@ window.addEventListener('load',
                             numLeaves = 100;
                             numSnow = 20;
                         } else if (loc < 75) {
-                            numLeaves = 30;
-                            numSnow = 120;
+                            numLeaves = 20;
+                            numSnow = 100;
                         } else {
                             numLeaves = 35;
                             numSnow = 15;
@@ -118,7 +118,7 @@ window.addEventListener('load',
                         newChild.style.width = (10 - random) + "px";
                         newChild.style.height = (10 - random) + "px";
                     }
-                    rot.push(Math.random() / 4 + 0.3);
+                    rot.push(Math.random() / 4 + 0.4);
                     delta.push(Math.random() * 40 - 20);
                     if (z < 90) {
                         dir.push(-1);
@@ -139,9 +139,9 @@ window.addEventListener('load',
 
                 //Animates the children of a given parent to fall
                 function animate(parent) {
-                    console.log(parent.children.length + " " + curSnow + "/" + numSnow + " " + curLeaves + "/" +numLeaves);
                     if (curLeaves < numLeaves) {
-                        for (let i = 0; i < (numLeaves - curLeaves) && ((curLeaves + curSnow)< (numLeaves + numSnow)); i++) {
+                        //&& ((curLeaves + curSnow)< (numLeaves + numSnow))
+                        for (let i = 0; i < (numLeaves - curLeaves); i++) {
                             setTimeout(function () {
                                 createChild(document.getElementsByClassName("tree")[0], "leaf");
                             }, 300 * i);
@@ -150,7 +150,8 @@ window.addEventListener('load',
                     }
 
                     if (curSnow < numSnow) {
-                        for (let i = 0; i < (numSnow - curSnow) && ((curLeaves + curSnow) < (numLeaves + numSnow)); i++) {
+                        // && ((curLeaves + curSnow) < (numLeaves + numSnow))
+                        for (let i = 0; i < (numSnow - curSnow); i++) {
                             setTimeout(function () {
                                 createChild(document.getElementsByClassName("sky")[0], "snowflake");
                             }, 200 * i);
@@ -170,7 +171,7 @@ window.addEventListener('load',
                         }
                         child.style.left = (child.style.left.replace("px", "") - 0 - (0.1 * Math.sin(z / 180 * Math.PI)) + (dir[i] * speed[i] * 1.5) + wind[i]) + "px";
 
-                        if ((child.style.top.replace("px", "") - 0 + dy) > height || (child.style.left.replace("px", "") - 0 + dx) > width || (child.style.left.replace("px", "") - 0 + dx) < -500) {
+                        if ((child.style.top.replace("px", "") - 0 + dy) > height || (child.style.left.replace("px", "") - 0 + dx) > width || (child.style.left.replace("px", "") - 0 + dx) < -100) {
                             parent.removeChild(child);
                             dir.splice(i, 1);
                             speed.splice(i, 1);
@@ -191,7 +192,7 @@ window.addEventListener('load',
                                 }
                             } else if (z >= 100 && dir[i] === 1) {
                                 if (speed[i] < 1.1) {
-                                    speed[i] += 0.03;
+                                    speed[i] += 0.02;
                                 }
                             } else if (z <= 80 && dir[i] === -1) {
                                 if (speed[i] < 1.1) {
