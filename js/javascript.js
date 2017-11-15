@@ -170,7 +170,7 @@ window.addEventListener('load',
                             }
 
                             add = !add;
-                        }, 5000);
+                        }, 100);
                     }
 
                     for (let i = 0; i < parent.children.length; i++) {
