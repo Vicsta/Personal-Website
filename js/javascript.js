@@ -145,32 +145,24 @@ window.addEventListener('load',
                 }
 
                 //Animates the children of a given parent to fall
-                let add = true;
                 function animate(parent) {
-                    if(add) {
-                        add = !add;
-                        setTimeout(function() {
-                            if (curLeaves < numLeaves) {
-                                for (let i = 0; i < (numLeaves - curLeaves) && ((curLeaves + curSnow) < (numLeaves + numSnow)); i++) {
-                                    console.log(wait * i);
-                                    setTimeout(function () {
-                                        createChild(document.getElementsByClassName("tree")[0], "leaf");
-                                    }, wait * i);
-                                    curLeaves++;
-                                }
-                            }
+                    if (curLeaves < numLeaves) {
+                        for (let i = 0; i < (numLeaves - curLeaves) && ((curLeaves + curSnow) < (numLeaves + numSnow)); i++) {
+                            console.log(wait * i);
+                            setTimeout(function () {
+                                createChild(document.getElementsByClassName("tree")[0], "leaf");
+                            }, (wait * i));
+                            curLeaves++;
+                        }
+                    }
 
-                            if (curSnow < numSnow) {
-                                for (let i = 0; i < (numSnow - curSnow) && ((curLeaves + curSnow) < (numLeaves + numSnow)); i++) {
-                                    setTimeout(function () {
-                                        createChild(document.getElementsByClassName("sky")[0], "snowflake");
-                                    }, (wait + 100) * i);
-                                    curSnow++;
-                                }
-                            }
-
-                            add = !add;
-                        }, 100);
+                    if (curSnow < numSnow) {
+                        for (let i = 0; i < (numSnow - curSnow) && ((curLeaves + curSnow) < (numLeaves + numSnow)); i++) {
+                            setTimeout(function () {
+                                createChild(document.getElementsByClassName("sky")[0], "snowflake");
+                            }, ((wait + 100) * i));
+                            curSnow++;
+                        }
                     }
 
                     for (let i = 0; i < parent.children.length; i++) {
