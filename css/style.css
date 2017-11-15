@@ -108,6 +108,8 @@ body {
     background-size: contain;
     z-index: -500;
     display: none;
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
 }
 
 .leaf1 {
@@ -121,6 +123,8 @@ body {
     height: 10px;
     background-size: contain;
     z-index: -500;
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
 }
 
 .tree {

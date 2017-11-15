@@ -140,8 +140,7 @@ window.addEventListener('load',
                 //Animates the children of a given parent to fall
                 function animate(parent) {
                     if (curLeaves < numLeaves) {
-                        //&& ((curLeaves + curSnow)< (numLeaves + numSnow))
-                        for (let i = 0; i < (numLeaves - curLeaves); i++) {
+                        for (let i = 0; i < (numLeaves - curLeaves) && ((curLeaves + curSnow)< (numLeaves + numSnow)); i++) {
                             setTimeout(function () {
                                 createChild(document.getElementsByClassName("tree")[0], "leaf");
                             }, 300 * i);
@@ -150,8 +149,7 @@ window.addEventListener('load',
                     }
 
                     if (curSnow < numSnow) {
-                        // && ((curLeaves + curSnow) < (numLeaves + numSnow))
-                        for (let i = 0; i < (numSnow - curSnow); i++) {
+                        for (let i = 0; i < (numSnow - curSnow) && ((curLeaves + curSnow) < (numLeaves + numSnow)); i++) {
                             setTimeout(function () {
                                 createChild(document.getElementsByClassName("sky")[0], "snowflake");
                             }, 200 * i);
