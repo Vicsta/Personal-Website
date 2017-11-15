@@ -29,17 +29,17 @@ window.addEventListener('load',
                     let cur = (document.documentElement.scrollTop || document.body.scrollTop);
                     let loc = cur / ((document.documentElement.scrollHeight || document.body.scrollHeight) - window.innerHeight) * 100;
                     if (loc < 25) {
-                        numLeaves = 30;
+                        numLeaves = 50;
                         numSnow = 0;
                     } else if (loc < 50) {
-                        numLeaves = 70;
-                        numSnow = 10;
+                        numLeaves = 100;
+                        numSnow = 20;
                     } else if (loc < 75) {
-                        numLeaves = 20;
+                        numLeaves = 30;
                         numSnow = 120;
                     } else {
-                        numLeaves = 20;
-                        numSnow = 10;
+                        numLeaves = 35;
+                        numSnow = 15;
                     }
                 });
 
@@ -255,6 +255,30 @@ window.addEventListener('load',
                                     $('html,body').animate({
                                             scrollTop: $(".contact").offset().top},
                                         'slow');
+                                });
+
+                                let press = false;
+
+                                document.getElementsByClassName("hoverHide")[0].addEventListener("click", function() {
+                                    document.getElementsByClassName("hoverHide")[0].style.pointerEvents = "none";
+                                    if(!press) {
+                                        document.getElementsByClassName("hoverHide")[0].style.boxShadow = "inset #0f0f0f 0 0 0.7vw 0.2vw";
+                                        $(".home, .contact, .exp, .about").css({
+                                            opacity: 1.0,
+                                            visibility: "visible"
+                                        }).animate({opacity: 0}, 1000, function () {
+                                            document.getElementsByClassName("hoverHide")[0].style.pointerEvents = "auto";
+                                        });
+                                    } else {
+                                        document.getElementsByClassName("hoverHide")[0].style.boxShadow = "";
+                                        $(".home, .contact, .exp, .about").css({
+                                            opacity: 0,
+                                            visibility: "visible"
+                                        }).animate({opacity: 1}, 1000, function () {
+                                            document.getElementsByClassName("hoverHide")[0].style.pointerEvents = "auto";
+                                        })
+                                    }
+                                    press = !press;
                                 });
 
                                 $(".all").fadeIn(1500, function () {

@@ -46,12 +46,32 @@ body {
 
 .sideBar {
     width: 8vw;
-    top: 24vh;
+    top: 60vh;
     left: 0;
     height: 40vh;
-    outline: solid black .1vw;
+    border-top: solid black .1vw;
+    border-right: solid black .1vw;
     position: fixed;
     background: white;
+}
+
+.hoverHide {
+    width: 8vw;
+    top: 90vh;
+    left: 12.6vw;
+    height: 10vh;
+    line-height: 10vh;
+    border: solid black .1vw;
+    border-bottom: none;
+    position: fixed;
+    background: white;
+    border-top-left-radius: 1vw;
+    border-top-right-radius: 1vw;
+}
+
+.hoverHide:hover {
+    cursor: pointer;
+    box-shadow: #0f0f0f 0 0 1vw 0.2vw;
 }
 
 .barLink {
