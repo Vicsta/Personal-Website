@@ -20,8 +20,6 @@ window.addEventListener('load',
                 curPage = pages.indexOf(check);
             } else {
                 document.getElementsByClassName("welcome")[0].style.display = "block";
-<<<<<<< HEAD
-=======
                 let numLeaves = 60;
                 let numSnow = 0;
                 let curLeaves = 0;
@@ -247,7 +245,6 @@ window.addEventListener('load',
                 setInterval(function () {
                     animate(document.getElementsByClassName("container")[0]);
                 }, 10);
->>>>>>> parent of 63bbf83... adj
 
                 /*
                 END OF PROCEDURE
