@@ -41,13 +41,10 @@
       <file leaf-file-name="javascript.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/javascript.js">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
             <state relative-caret-position="271">
               <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-=======
             <state relative-caret-position="273">
               <caret line="50" column="38" lean-forward="true" selection-start-line="50" selection-start-column="38" selection-end-line="50" selection-end-column="38" />
->>>>>>> parent of 63bbf83... adj
               <folding />
             </state>
           </provider>
@@ -180,23 +177,17 @@
       <workItem from="1507563046187" duration="3035000" />
       <workItem from="1508359423130" duration="10000" />
       <workItem from="1510588113855" duration="105000" />
-<<<<<<< HEAD
       <workItem from="1510690562969" duration="29626000" />
       <workItem from="1510880005854" duration="454000" />
       <workItem from="1511392013290" duration="16000" />
       <workItem from="1519005485054" duration="1473000" />
-=======
       <workItem from="1510690562969" duration="25491000" />
->>>>>>> parent of 63bbf83... adj
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-<<<<<<< HEAD
     <option name="totallyTimeSpent" value="55332000" />
-=======
     <option name="totallyTimeSpent" value="49254000" />
->>>>>>> parent of 63bbf83... adj
   </component>
   <component name="ToolWindowManager">
     <frame x="-12" y="-12" width="2712" height="1458" extended-state="6" />
