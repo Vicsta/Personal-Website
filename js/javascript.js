@@ -52,7 +52,7 @@ window.addEventListener('load',
                         } else if (loc < 75) {
                             numLeaves = 20;
                             numSnow = 110;
-                            wait = 600;
+                            wait = 300;
                         } else {
                             numLeaves = 35;
                             numSnow = 25;
@@ -249,21 +249,63 @@ window.addEventListener('load',
                 /*
                 END OF PROCEDURE
                  */
-                $(".welcomeName").fadeIn(17, function () {
-                    $(".welcomeFlair").fadeIn(10, function () {
+                $(".welcomeName").fadeIn(1700, function () {
+                    $(".welcomeFlair").fadeIn(1000, function () {
                         setTimeout(function () {
-                            $(".welcome").fadeOut(10, function () {
+                            $(".welcome").fadeOut(1000, function () {
 
-                                // $(".homeBar").click(function() {
-                                //     $('html,body').animate({
-                                //             scrollTop: $(".home").offset().top},
-                                //         'slow');
-                                // });
+                                $(".homeBar").click(function() {
+                                    $('html,body').animate({
+                                            scrollTop: $(".home").offset().top},
+                                        'slow');
+                                });
 
-                                $(".all").fadeIn(15, function () {
+                                $(".aboutBar").click(function() {
+                                    $('html,body').animate({
+                                            scrollTop: $(".about").offset().top},
+                                        'slow');
+                                });
+
+                                $(".experienceBar").click(function() {
+                                    $('html,body').animate({
+                                            scrollTop: $(".exp").offset().top},
+                                        'slow');
+                                });
+
+                                $(".contactBar").click(function() {
+                                    $('html,body').animate({
+                                            scrollTop: $(".contact").offset().top},
+                                        'slow');
+                                });
+
+                                let press = false;
+
+                                document.getElementsByClassName("hoverHide")[0].addEventListener("click", function() {
+                                    document.getElementsByClassName("hoverHide")[0].style.pointerEvents = "none";
+                                    if(!press) {
+                                        document.getElementsByClassName("hoverHide")[0].style.boxShadow = "inset #0f0f0f 0 0 0.7vw 0.2vw";
+                                        $(".home, .contact, .exp, .about").css({
+                                            opacity: 1.0,
+                                            visibility: "visible"
+                                        }).animate({opacity: 0}, 1000, function () {
+                                            document.getElementsByClassName("hoverHide")[0].style.pointerEvents = "auto";
+                                        });
+                                    } else {
+                                        document.getElementsByClassName("hoverHide")[0].style.boxShadow = "";
+                                        $(".home, .contact, .exp, .about").css({
+                                            opacity: 0,
+                                            visibility: "visible"
+                                        }).animate({opacity: 1}, 1000, function () {
+                                            document.getElementsByClassName("hoverHide")[0].style.pointerEvents = "auto";
+                                        })
+                                    }
+                                    press = !press;
+                                });
+
+                                $(".all").fadeIn(1500, function () {
                                 });
                             });
-                        }, 14);
+                        }, 1400);
                     });
                 });
             }

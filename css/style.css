@@ -1,5 +1,5 @@
 body {
-    /*background: url(../images/bkgd2.png) no-repeat fixed;*/
+    background: url(../images/bkgd2.png) no-repeat fixed;
     background-size: 100% 100%;
 }
 
@@ -42,4 +42,113 @@ body {
 .welcome, .all, .not {
     display: none;
     z-index: 9001;
+}
+
+.sideBar {
+    width: 8vw;
+    top: 60vh;
+    left: 0;
+    height: 40vh;
+    border-top: solid black .1vw;
+    border-right: solid black .1vw;
+    position: fixed;
+    background: white;
+}
+
+.hoverHide {
+    width: 8vw;
+    top: 90vh;
+    left: 12.6vw;
+    height: 10vh;
+    line-height: 10vh;
+    border: solid black .1vw;
+    border-bottom: none;
+    position: fixed;
+    background: white;
+    border-top-left-radius: 1vw;
+    border-top-right-radius: 1vw;
+}
+
+.hoverHide:hover {
+    cursor: pointer;
+    box-shadow: #0f0f0f 0 0 1vw 0.2vw;
+}
+
+.barLink {
+    width: 100%;
+    height: 10vh;
+    line-height: 10vh;
+    font-size: 1vw;
+}
+
+.barLink:hover {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.home, .about, .exp, .contact {
+    margin-top: 10vh;
+    margin-bottom: 6vh;
+    width: 60vw;
+    height: 100vh;
+    margin-left: 25vw;
+    outline: 0.1vw black solid;
+    background: white;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+.leaf0, .leaf1{
+    position: fixed;
+    background: url(../images/BlackLeaf0.png) no-repeat;
+    background-size: contain;
+    z-index: -500;
+    display: none;
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+}
+
+.leaf1 {
+    position: fixed;
+    background: url(../images/BlackLeaf1.png) no-repeat;
+    background-size: contain;
+    z-index: -500;
+    display: none;
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+}
+
+.snowflake0 {
+    background: url(../images/Snowflake0.png) no-repeat;
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    background-size: contain;
+    z-index: -500;
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+}
+
+.tree {
+    visibility: hidden;
+    position: fixed;
+    top: 15vh;
+    left: 2vw;
+    height: 25vh;
+    width: 22vw;
+    background: red;
+}
+
+.sky {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 10vh;
+    width: 100vw;
+    background: skyblue;
 }
