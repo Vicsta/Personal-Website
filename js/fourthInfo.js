@@ -1,11 +1,11 @@
 window.addEventListener('load',
     function () {
         let numLeaves = 60;
-        let numSnow = 50;
+        let numSnow = 75;
         let curLeaves = 0;
         let curSnow = 0;
 
-        let wait = 800;
+        let wait = 700;
 
         /*
                         PROCEDURE TO CONTROL BACKGROUND ANIMATIONS
@@ -52,7 +52,7 @@ window.addEventListener('load',
             newChild.style.transform = randomRotate();
             let z = newChild.style.transform.split(" ")[2].replace("rotateZ(", "").replace("deg)", "");
             grav.push(Math.random() / 6 + 0.3);
-            speed.push(Math.random() / 6 + 1);
+            speed.push(Math.random() / 6 + .4);
             if (childName === "leaf") {
                 wind.push(Math.random() / 4 + 0.5);
                 newChild.className = childName + Math.floor(Math.random() * 2);

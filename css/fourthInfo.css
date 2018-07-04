@@ -63,3 +63,25 @@
     -webkit-transform: translate3d(0, 0, 0);
     -webkit-backface-visibility: hidden;
 }
+
+.rightFourth, .leftFourth {
+    width: 35vw;
+    height: 30vh;
+    background: white;
+}
+
+.rightFourth {
+    float: right;
+    margin-top: 10vh;
+    border-bottom-left-radius: 5vw;
+    margin-right: 5vw;
+    box-shadow: 3px 3px 15px 0 rgba(0,0,0,.2);
+}
+
+.leftFourth {
+    margin-top: 50vh;
+    float: left;
+    border-top-right-radius: 5vw;
+    margin-left: 5vw;
+    box-shadow: -3px 3px 15px 0 rgba(0,0,0,.2);
+}

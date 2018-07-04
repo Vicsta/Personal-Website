@@ -39,9 +39,3 @@ html,body {
     height: 1000px;
     margin-top: 65px;
 }
-
-.OVERFLOW {
-    width: 100vw;
-    height: 10000px;
-    background: lightblue;
-}

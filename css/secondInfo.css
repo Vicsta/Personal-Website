@@ -23,7 +23,7 @@
 }
 
 .leftCard, .rightCard {
-    border: 2px solid #666;
+    /*border: 2px solid #666;*/
     background: white;
     /*background: linear-gradient(35deg, #CCFFFF, #FFCCCC);*/
     position: absolute;
@@ -32,8 +32,10 @@
 
 .leftCard {
     transform: rotate(45deg);
+    box-shadow: -3px 3px 15px 0 rgba(0,0,0,.5);
 }
 
 .rightCard {
     transform: rotate(-45deg);
+    box-shadow: 3px 3px 15px 0 rgba(0,0,0,.5);
 }
