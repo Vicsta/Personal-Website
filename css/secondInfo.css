@@ -23,8 +23,9 @@
 }
 
 .leftCard, .rightCard {
-    /*border: 2px solid black;*/
-    background: linear-gradient(35deg, #CCFFFF, #FFCCCC);
+    border: 2px solid #666;
+    background: white;
+    /*background: linear-gradient(35deg, #CCFFFF, #FFCCCC);*/
     position: absolute;
     transform-origin: 50% 50%;
 }
