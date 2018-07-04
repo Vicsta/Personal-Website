@@ -1,0 +1,38 @@
+.secondInfo {
+    height: calc(100vh - 65px);
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+    border-top: solid black 2px;
+}
+
+.boxDate {
+    height: 50px;
+}
+
+.boxTitle {
+
+}
+
+.boxDesc{
+
+}
+
+.boxPic {
+
+}
+
+.leftCard, .rightCard {
+    /*border: 2px solid black;*/
+    background: linear-gradient(35deg, #CCFFFF, #FFCCCC);
+    position: absolute;
+    transform-origin: 50% 50%;
+}
+
+.leftCard {
+    transform: rotate(45deg);
+}
+
+.rightCard {
+    transform: rotate(-45deg);
+}

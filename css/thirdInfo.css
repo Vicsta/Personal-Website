@@ -1,0 +1,6 @@
+.thirdInfo {
+    width: inherit;
+    height: 1000px;
+    transform-origin: 50% 50%;
+    border-top: solid black 2px;
+}

@@ -1,0 +1,84 @@
+.topName, .topHome, .topAbout, .topExp, .topContact{
+    position: absolute;
+}
+
+.topName:hover, .topHome:hover, .topAbout:hover, .topExp:hover, .topContact:hover{
+    cursor: pointer;
+}
+
+.topBar {
+    z-index: 666;
+    position: fixed;
+    width: 100vw;
+    height: 65px;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid #0f0f0f;
+    background: white;
+    line-height: 65px;
+    font-size: 1vw;
+    font-family: Georgia;
+}
+
+.topName {
+    font-weight: bold;
+    left: 1.5vw;
+    font-size: 3vw;
+    font-family: Georgia;
+}
+
+.topHome {
+    left: 35vw;
+}
+
+.topAbout {
+    left: 40vw;
+}
+
+.topExp {
+    left: 45.5vw;
+}
+
+.topContact{
+    left: 54vw;
+}
+
+.div1, .div2, .div3 {
+    border-left: 1px solid #333;
+    height: 31px;
+    position: absolute;
+    top: 17px;
+}
+
+.div1 {
+    left: 39vw;
+}
+
+.div2 {
+    left: 44.5vw;
+}
+
+.div3 {
+    left: 53vw;
+}
+
+.topLink:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 14px;
+    background-color: #333;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.topLink:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    cursor: pointer;
+}
