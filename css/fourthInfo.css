@@ -35,7 +35,7 @@
 
 .leaf0, .leaf1{
     position: absolute;
-    background: url("https://image.ibb.co/h57i1d/Black_Leaf0.png") no-repeat;
+    background: url("../images/BlackLeaf0.png") no-repeat;
     background-size: contain;
     z-index: -500;
     display: none;
@@ -45,7 +45,7 @@
 
 .leaf1 {
     position: absolute;
-    background: url("https://image.ibb.co/fA8Z7J/Black_Leaf1.png") no-repeat;
+    background: url("../images/BlackLeaf1.png") no-repeat;
     background-size: contain;
     z-index: -500;
     display: none;
@@ -54,7 +54,7 @@
 }
 
 .snowflake0 {
-    background: url("https://image.ibb.co/iG6yZy/Snowflake0.png") no-repeat;
+    background: url("../images/Snowflake0.png") no-repeat;
     position: absolute;
     width: 10px;
     height: 10px;
