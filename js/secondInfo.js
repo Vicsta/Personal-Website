@@ -12,10 +12,11 @@ window.addEventListener("load", function() {
     let focused = false;
 
     let cards = [];
-    for(let i = 0; i < document.getElementsByClassName("secondInfo")[0].children.length; i ++) {
+    let arr = $(".secondInfo").children(".card");
+    for(let i = 0; i < arr.length; i ++) {
         let obj = {};
-        let child = document.getElementsByClassName("secondInfo")[0].children[i];
-        child.style.zIndex = document.getElementsByClassName("secondInfo")[0].children.length - i;
+        let child = arr[i];
+        child.style.zIndex = arr.length - i;
         obj["date"] = child.children[0];
         obj["title"] = child.children[1];
         obj["desc"] = child.children[2];
@@ -35,7 +36,7 @@ window.addEventListener("load", function() {
     screenM = parseInt(screenM.substr(0, screenM.length - 2))/2;
     let end = (1.2*cards[cards.length - 1]["left"] + 1.2*absTop*speed - 0.2*screenM - 105/2)/(1.2*speed);
     getEnd = function() { return end + infoHeight };
-    document.getElementsByClassName("thirdInfo")[0].style.marginTop = (end - absTop + infoHeight) + "px";
+    document.getElementsByClassName("thirdInfo")[0].style.marginTop = (end - absTop + infoHeight + verticalOffset) + "px";
     console.log("COMPUTED END IS " + end);
 
     /*
@@ -70,7 +71,7 @@ window.addEventListener("load", function() {
         infoHeight = parseInt(infoHeight.substr(0, infoHeight.length - 2));
         end = (1.2*cards[cards.length - 1]["left"] + 1.2*absTop*speed - 0.2*screenM - 105/2)/(1.2*speed);
         getEnd = function() { return end + infoHeight };
-        document.getElementsByClassName("thirdInfo")[0].style.marginTop = (end - absTop + infoHeight) + "px";
+        document.getElementsByClassName("thirdInfo")[0].style.marginTop = (end - absTop + infoHeight + verticalOffset) + "px";
         setCards((document.documentElement.scrollTop || document.body.scrollTop));
         scrollFunc();
     });
@@ -90,8 +91,9 @@ window.addEventListener("load", function() {
         let screenMid = getComputedStyle(document.getElementsByClassName("secondInfo")[0]).width;
         screenMid = parseInt(screenMid.substr(0, screenMid.length - 2))/2;
 
-        for(let i = 0; i < document.getElementsByClassName("secondInfo")[0].children.length; i ++) {
-            let child = document.getElementsByClassName("secondInfo")[0].children[i];
+        let arr = $(".secondInfo").children(".card");
+        for(let i = 0; i < arr.length; i ++) {
+            let child = arr[i];
 
             let newLoc = (cards[i]["left"] - (scrolled * speed));
 

@@ -1,5 +1,5 @@
 window.addEventListener('load', function() {
-    let num = 10;
+    let num = 12;
     let parent = $(".firstInfo");
     let size = parent.width()/num;
     let edit = parent.height()/size;
@@ -23,7 +23,7 @@ window.addEventListener('load', function() {
                 circle.style.top = (j * size + 65) + "px";
                 circle.style.width = circle.style.height = size + "px";
 
-                circle.style.borderWidth = (Math.random() * 3) + 2 + "px";
+                circle.style.borderWidth = (Math.random() * 5) + 3 + "px";
 
                 switch(circles) {
                     case 1: circle.style.borderColor = blue; break;
@@ -36,11 +36,21 @@ window.addEventListener('load', function() {
         }
     }
 
-    window.addEventListener('mousemove', resizeCircles);
-    window.addEventListener('scroll', resizeCircles);
-
+    window.addEventListener('mousemove', () => {
+        let scroll = (document.documentElement.scrollTop || document.body.scrollTop);
+        if(scroll < parent.height()) {
+            resizeCircles()
+        }
+    });
+    window.addEventListener('scroll', () => {
+        let scroll = (document.documentElement.scrollTop || document.body.scrollTop);
+        if(scroll < parent.height()) {
+            resizeCircles()
+        }
+    });
     let lastX = 0;
     let lastY = 0;
+    resizeCircles();
     function resizeCircles() {
         let arr = parent.children(".circle");
         let scroll = (document.documentElement.scrollTop || document.body.scrollTop);
@@ -55,7 +65,7 @@ window.addEventListener('load', function() {
             x1 = parseFloat(x1.substr(0, x1.length - 2)) + d / 2;
             let y1 = arr[i].style.top;
             y1 = parseFloat(y1.substr(0, y1.length - 2)) + d / 2;
-            let ratio = ((dist(x1, y1, lastX, lastY - 65 + scroll)) / parent.width());
+            let ratio = (((dist(x1, y1, lastX, lastY - 65 + scroll) * 0.9) + (0.1 * parent.width())) / parent.width());
             if(ratio > 1) {
                 ratio = 1;
             } else if(ratio < 0.1) {
