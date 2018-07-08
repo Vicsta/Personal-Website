@@ -36,7 +36,7 @@ window.addEventListener('load', function() {
         }
     }
 
-    parent.on('mousemove', resizeCircles);
+    window.addEventListener('mousemove', resizeCircles);
     window.addEventListener('scroll', resizeCircles);
 
     let lastX = 0;
