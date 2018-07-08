@@ -17,14 +17,14 @@ function loadHome() {
             }, Math.abs(top - (document.documentElement.scrollTop || document.body.scrollTop)));
     });
 
-    $(".topAbout").click(function () {
+    $(".topExp").click(function () {
         let top = $(".secondInfo").offset().top - $('.topBar').height();
         $('html,body').animate({
                 scrollTop: top
             }, Math.abs(top - (document.documentElement.scrollTop || document.body.scrollTop)));
     });
 
-    $(".topExp").click(function () {
+    $(".topAbout").click(function () {
         let top = getEnd();
         $('html,body').animate({
                 scrollTop: top

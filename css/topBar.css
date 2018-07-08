@@ -17,7 +17,7 @@
     background: white;
     line-height: 65px;
     font-size: 1vw;
-    font-family: Georgia;
+    font-family: Georgia, sans-serif;
     box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.5);
 }
 
@@ -25,23 +25,23 @@
     font-weight: bold;
     left: 1.5vw;
     font-size: 3vw;
-    font-family: Georgia;
+    font-family: Georgia, sans-serif;
 }
 
 .topHome {
-    left: 35vw;
+    left: 37vw;
 }
 
 .topAbout {
-    left: 40vw;
+    left: 50.5vw;
 }
 
 .topExp {
-    left: 45.5vw;
+    left: 42vw;
 }
 
 .topContact{
-    left: 54vw;
+    left: 56vw;
 }
 
 .div1, .div2, .div3 {
@@ -52,15 +52,15 @@
 }
 
 .div1 {
-    left: 39vw;
+    left: 41vw;
 }
 
 .div2 {
-    left: 44.5vw;
+    left: 49.5vw;
 }
 
 .div3 {
-    left: 53vw;
+    left: 55vw;
 }
 
 .topLink:before {
