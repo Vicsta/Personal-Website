@@ -1,6 +1,5 @@
 .thirdInfo {
     width: inherit;
-    height: 1000px;
     border-top: solid black 2px;
     position: relative;
 }
@@ -31,7 +30,7 @@
 
 .thirdRight, .thirdLeft {
     width: 30vw;
-    height: 50vh;
+    height: 70vh;
     background: white;
     z-index: 1;
     border: solid black 2px;
@@ -45,4 +44,5 @@
 
 .thirdLeft {
     margin-left: 10vw;
+    margin-bottom: 10vh;
 }
