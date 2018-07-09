@@ -3,7 +3,7 @@ window.addEventListener('load', function() {
     let parent = $(".firstInfo");
     let size = parent.width()/num;
     let edit = parent.height()/size;
-    edit = Math.round(edit);
+    edit = Math.ceil(edit);
     parent.height(edit * size);
 
     let blue = "#5C6BC0"; // blue

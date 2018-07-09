@@ -36,12 +36,9 @@ html,body {
     background-size: contain;
     transform-origin: 50% 50%;
     /*transform: rotate(90deg);*/
-    height: 1000px;
-    margin-top: 65px;
-}
-
-.topBuffer {
-    margin-top: calc(10vh + 65px) !important;
+    /*height: auto;*/
+    overflow: hidden;
+    margin-top: 10vh;
 }
 
 .firstLeft {
