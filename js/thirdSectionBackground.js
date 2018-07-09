@@ -1,7 +1,13 @@
 window.addEventListener('load', function() {
 
     let parent = $("#thirdBack");
-    console.log(parent.offset().top + " " + (document.documentElement.scrollTop || document.body.scrollTop));
+
+    let num = 0;
+    let blue = "#5C6BC0"; // blue
+    let green = "#8BC34A"; // green
+    let red = "#F44336"; // red
+    let yellow = "#FFB74D"; // yellow
+
     for(let start = Math.random() * 7 - 4; start < 100; start += Math.random() * 4 + 3) {
         let size = Math.random() * 3 + 5;
 
@@ -16,6 +22,8 @@ window.addEventListener('load', function() {
         square.style.zIndex = parseInt(size) + "";
         wrapper.append(square);
 
+        num++;
+
         for(let i = size - 1; i >= 1; i --) {
             let behind = document.createElement("div");
             behind.className = "testSq";
@@ -23,7 +31,20 @@ window.addEventListener('load', function() {
             behind.style.left = (start + (size - i)/2) + "vw";
             behind.style.bottom= "-0vw";
             behind.style.zIndex = parseInt(i) + "";
+            switch(num) {
+                case 1: behind.style.background = blue; break;
+                case 2: behind.style.background = green; break;
+                case 3: behind.style.background = red; break;
+                case 4: behind.style.background = yellow; break;
+            }
+
+            behind.style.opacity = 0.1 + "";
+
             wrapper.append(behind);
+        }
+
+        if(num === 4) {
+            num = 0;
         }
 
         start += size;
