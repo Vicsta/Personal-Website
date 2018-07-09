@@ -28,7 +28,15 @@ window.addEventListener('load', function() {
 
         start += size;
         parent.append(wrapper);
-        setTimeout(() => { up(wrapper, 500, 0, 30) }, 500);
+        setTimeout(() => { up(wrapper, randomMaxHeight(), 0, randomMaxSpeed()) }, 500);
+    }
+
+    function randomMaxSpeed() {
+        return Math.random() * 20 + 20;
+    }
+
+    function randomMaxHeight() {
+        return Math.random() * 200 + 300;
     }
 
     let height = parent.height();
@@ -66,7 +74,7 @@ window.addEventListener('load', function() {
         if(bot > 0) {
             setTimeout(() => { down(elem, finalPos, 0, maxSpeed) }, 16.67);
         } else {
-            setTimeout(() => { up(elem, finalPos, speed, maxSpeed) }, 16.67);
+            setTimeout(() => { up(elem, randomMaxHeight(), speed, randomMaxSpeed()) }, 16.67);
         }
     }
 
