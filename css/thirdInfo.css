@@ -2,4 +2,47 @@
     width: inherit;
     height: 1000px;
     border-top: solid black 2px;
+    position: relative;
+}
+
+#thirdBack {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    height: calc(100vh - 65px);
+}
+
+.square1 {
+    position: absolute;
+    bottom: 0;
+    width: 8vw;
+    height: 8vw;
+    background: white;
+    border: solid black 2px;
+}
+
+.testSq {
+    position: absolute;
+    bottom: 0;
+    width: 2vw;
+    height: 2vw;
+    background: lightblue;
+}
+
+.thirdRight, .thirdLeft {
+    width: 30vw;
+    height: 50vh;
+    background: white;
+    z-index: 1;
+    border: solid black 2px;
+    margin-top: 10vh;
+}
+
+.thirdRight {
+    margin-right: 10vw;
+    margin-left: 60vw;
+}
+
+.thirdLeft {
+    margin-left: 10vw;
 }
