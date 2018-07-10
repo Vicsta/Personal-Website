@@ -5,6 +5,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/thirdInfo.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/thirdInfo.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/firstSectionBackground.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/firstSectionBackground.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/secondSectionBackground.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/secondSectionBackground.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/thirdSectionBackground.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/thirdSectionBackground.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -19,7 +21,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="thirdSectionBackground.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="thirdSectionBackground.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/thirdSectionBackground.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="221">
@@ -28,11 +30,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="secondSectionBackground.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="firstSectionBackground.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/firstSectionBackground.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="33" column="15" lean-forward="true" selection-start-line="33" selection-start-column="15" selection-end-line="33" selection-end-column="65" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="secondSectionBackground.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/secondSectionBackground.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="476">
+              <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -117,12 +128,12 @@
         <option value="$PROJECT_DIR$/js/secondSecntionBackground.js" />
         <option value="$PROJECT_DIR$/css/secondInfo.css" />
         <option value="$PROJECT_DIR$/js/secondInfo.js" />
-        <option value="$PROJECT_DIR$/js/secondSectionBackground.js" />
         <option value="$PROJECT_DIR$/css/style.css" />
-        <option value="$PROJECT_DIR$/js/firstSectionBackground.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/css/thirdInfo.css" />
         <option value="$PROJECT_DIR$/js/thirdSectionBackground.js" />
+        <option value="$PROJECT_DIR$/js/firstSectionBackground.js" />
+        <option value="$PROJECT_DIR$/js/secondSectionBackground.js" />
       </list>
     </option>
   </component>
@@ -225,12 +236,12 @@
       <workItem from="1530723074939" duration="12761000" />
       <workItem from="1531013983820" duration="22274000" />
       <workItem from="1531101172665" duration="7380000" />
-      <workItem from="1531113674350" duration="24894000" />
+      <workItem from="1531113674350" duration="26258000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="236931000" />
+    <option name="totallyTimeSpent" value="238295000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -542,13 +553,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/firstSectionBackground.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="44" lean-forward="true" selection-start-column="44" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitattributes">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -587,13 +591,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/secondSectionBackground.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/javascript.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="697">
@@ -605,6 +602,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="102" column="9" lean-forward="true" selection-start-line="102" selection-start-column="9" selection-end-line="102" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/firstSectionBackground.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="33" column="15" lean-forward="true" selection-start-line="33" selection-start-column="15" selection-end-line="33" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/secondSectionBackground.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
         </state>
       </provider>
     </entry>
