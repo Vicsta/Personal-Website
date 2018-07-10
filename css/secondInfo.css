@@ -1,9 +1,9 @@
 .secondInfo {
     height: calc(100vh - 65px);
     width: 100vw;
-    overflow: hidden;
+    /*overflow: hidden;*/
     position: relative;
-    border-top: solid black 2px;
+    /*border-top: solid black 2px;*/
 }
 
 .boxDate {

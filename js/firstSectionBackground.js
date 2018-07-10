@@ -13,7 +13,7 @@ window.addEventListener('load', function() {
 
     let circles = 0;
 
-    for(let j = 0; j < edit; j++) {
+    for(let j = 0; j < edit - 1; j++) {
         for (let i = 0; i < num; i++) {
             if(Math.random() > 0.4) {
                 circles++;

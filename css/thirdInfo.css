@@ -1,7 +1,7 @@
 .thirdInfo {
     overflow: hidden;
     width: inherit;
-    border-top: solid black 2px;
+    /*border-top: solid black 2px;*/
     position: relative;
 }
 
