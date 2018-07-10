@@ -44,13 +44,7 @@
 }
 
 .leaf1 {
-    position: absolute;
     background: url("../images/BlackLeaf1.png") no-repeat;
-    background-size: contain;
-    z-index: -500;
-    display: none;
-    -webkit-transform: translate3d(0, 0, 0);
-    -webkit-backface-visibility: hidden;
 }
 
 .snowflake0 {

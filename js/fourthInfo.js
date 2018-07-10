@@ -41,6 +41,15 @@ window.addEventListener('load',
         let rot = [];
         let delta = [];
 
+        function randomColor() {
+            switch(Math.floor(Math.random() * 4)) {
+                case 0: return "Blue";
+                case 1: return "Red";
+                case 2: return "Yellow";
+                case 3: return "Green";
+            }
+        }
+
         function createChild(parent, childName) {
             let startX = (Math.random() * $(parent).width()) + "px";
             let startY = (Math.random() * $(parent).height()) + "px";
@@ -59,6 +68,7 @@ window.addEventListener('load',
                 let random = Math.random() * 15;
                 newChild.style.width = (60 - random) + "px";
                 newChild.style.height = (60 - random) + "px";
+                newChild.style.background = "url(.. /images/" + newChild.className + randomColor() + ".png) no-repeat"
             } else {
                 wind.push(0.2);
                 newChild.className = childName + Math.floor(Math.random());
