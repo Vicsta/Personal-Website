@@ -6,7 +6,7 @@ window.addEventListener('load', function() {
     let minLeft = -maxSize;
     let maxLeft = parent.width() + maxSize;
     let minTop = -maxSize;
-    let maxTop = parent.height() + maxSize;
+    let maxTop = parent.height() ;//+ maxSize/2;
 
     let blue = "#5C6BC0"; // blue
     let green = "#8BC34A"; // green
