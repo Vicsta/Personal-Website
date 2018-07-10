@@ -20,6 +20,7 @@
       <change beforePath="$PROJECT_DIR$/images/snowflake0Red.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/snowflake0Red.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/images/snowflake0Yellow.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/snowflake0Yellow.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/fourthInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/fourthInfo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/secondInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/secondInfo.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -51,20 +52,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fourthInfo.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="fourthInfo.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/fourthInfo.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="23" lean-forward="true" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+            <state>
+              <caret column="13" lean-forward="true" selection-start-column="13" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="secondInfo.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="secondInfo.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/secondInfo.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1527">
-              <caret line="147" column="47" selection-start-line="147" selection-start-column="47" selection-end-line="147" selection-end-column="47" />
+            <state relative-caret-position="335">
+              <caret line="154" column="45" selection-start-line="154" selection-start-column="45" selection-end-line="154" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -81,8 +82,8 @@
       <file leaf-file-name="secondSectionBackground.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/secondSectionBackground.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="7" column="26" lean-forward="true" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+            <state relative-caret-position="-17">
+              <caret line="17" column="45" selection-start-line="17" selection-start-column="45" selection-end-line="17" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -138,6 +139,7 @@
       <find>scroll</find>
       <find>children</find>
       <find>top</find>
+      <find>borderRadiu</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -161,11 +163,11 @@
         <option value="$PROJECT_DIR$/css/thirdInfo.css" />
         <option value="$PROJECT_DIR$/css/secondInfo.css" />
         <option value="$PROJECT_DIR$/js/firstSectionBackground.js" />
-        <option value="$PROJECT_DIR$/js/secondInfo.js" />
         <option value="$PROJECT_DIR$/js/secondSectionBackground.js" />
         <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/js/fourthInfo.js" />
         <option value="$PROJECT_DIR$/css/fourthInfo.css" />
+        <option value="$PROJECT_DIR$/js/secondInfo.js" />
       </list>
     </option>
   </component>
@@ -268,18 +270,18 @@
       <workItem from="1530723074939" duration="12761000" />
       <workItem from="1531013983820" duration="22274000" />
       <workItem from="1531101172665" duration="7380000" />
-      <workItem from="1531113674350" duration="41806000" />
+      <workItem from="1531113674350" duration="42129000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="253843000" />
+    <option name="totallyTimeSpent" value="254166000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.14713542" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14713542" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
@@ -297,25 +299,6 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
     </layout>
-    <layout-to-restore>
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14713542" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -594,31 +577,10 @@
     <entry file="file://$PROJECT_DIR$/images/leaf0Black.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/secondSectionBackground.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="7" column="26" lean-forward="true" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/secondInfo.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="23" lean-forward="true" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/thirdSectionBackground.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1717">
-          <caret line="102" column="9" lean-forward="true" selection-start-line="102" selection-start-column="9" selection-end-line="102" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/secondInfo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1527">
-          <caret line="147" column="47" selection-start-line="147" selection-start-column="47" selection-end-line="147" selection-end-column="47" />
         </state>
       </provider>
     </entry>
@@ -629,6 +591,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/css/fourthInfo.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="13" lean-forward="true" selection-start-column="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/fourthInfo.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -636,10 +605,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/fourthInfo.css">
+    <entry file="file://$PROJECT_DIR$/js/thirdSectionBackground.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="23" lean-forward="true" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+        <state relative-caret-position="1717">
+          <caret line="102" column="9" lean-forward="true" selection-start-line="102" selection-start-column="9" selection-end-line="102" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/secondSectionBackground.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-17">
+          <caret line="17" column="45" selection-start-line="17" selection-start-column="45" selection-end-line="17" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/secondInfo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="154" column="45" selection-start-line="154" selection-start-column="45" selection-end-line="154" selection-end-column="45" />
         </state>
       </provider>
     </entry>

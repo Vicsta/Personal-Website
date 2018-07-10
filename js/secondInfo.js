@@ -150,9 +150,12 @@ window.addEventListener("load", function() {
         let TOP = absTop - verticalOffset;
         let BOT = end;
         let CUR = (document.documentElement.scrollTop || document.body.scrollTop);
-        console.log((CUR - TOP) / (BOT - TOP));
         for(let i = 0; i < arr.length; i ++) {
-            arr[i].style.borderRadius = 60 * (((BOT - TOP) - (CUR - TOP)) / (BOT - TOP)) + "%";
+            if(CUR >= end) {
+                arr[i].style.borderRadius = 0;
+            } else {
+                arr[i].style.borderRadius = 60 * (((BOT - TOP) - (CUR - TOP)) / (BOT - TOP)) + "%";
+            }
         }
     }
 
