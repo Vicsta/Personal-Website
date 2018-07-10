@@ -32,7 +32,7 @@ window.addEventListener('load', function() {
                     case 3: circle.style.borderColor = red; break;
                     case 4: circle.style.borderColor = yellow; circles = 0; break;
                 }
-                circle.style.opacity = (Math.random() * .5) + .1;
+                circle.style.opacity = (Math.random() * .6) + .1;
                 parent.append(circle);
             }
         }

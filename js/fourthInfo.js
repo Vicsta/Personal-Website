@@ -68,6 +68,7 @@ window.addEventListener('load',
                 let random = Math.random() * 15;
                 newChild.style.width = (60 - random) + "px";
                 newChild.style.height = (60 - random) + "px";
+                newChild.style.opacity = Math.random() * 0.7 + 0.1;
             } else {
                 wind.push(0.2);
                 newChild.className = "falling " + childName + Math.floor(Math.random());
