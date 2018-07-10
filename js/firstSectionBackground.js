@@ -16,7 +16,7 @@ window.addEventListener('load', function() {
     for(let j = 0; j < edit - 1; j++) {
         for (let i = 0; i < num; i++) {
             // if(Math.random() / (2 - ((edit - 1 - i) / (edit - 1))) > 0.4) {
-            if(Math.random() > 0.4) {
+            if(Math.random() > 0.5) {
                 circles++;
                 let circle = document.createElement("div");
                 circle.className = "circle";

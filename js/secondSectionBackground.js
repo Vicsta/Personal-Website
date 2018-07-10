@@ -5,7 +5,7 @@ window.addEventListener('load', function() {
     let maxSize = parent.width()/num;
     let minLeft = -maxSize;
     let maxLeft = parent.width() + maxSize;
-    let minTop = -maxSize;
+    let minTop = -maxSize/2;
     let maxTop = parent.height() ;//+ maxSize/2;
 
     let blue = "#5C6BC0"; // blue
@@ -15,16 +15,26 @@ window.addEventListener('load', function() {
 
     let circles = 0;
 
+    let start = minTop + (Math.random() * maxSize);
+
     for(let left = minLeft + (Math.random() * maxSize); left < maxLeft; left += 1.5*maxSize + (Math.random() * maxSize)) {
-        for (let top = minTop + (Math.random() * maxSize); top < maxTop; top += 1.5*maxSize + (Math.random() * maxSize)) {
+        for (let top = start; top < maxTop; top += 1.5*maxSize + (Math.random() * maxSize)) {
             let size = (Math.random() * (maxSize*2/3)) + maxSize/3;
             let circle = document.createElement("div");
             circle.className = "circle";
-            circle.style.left = left + (maxSize - size)/2 + "px";
-            circle.style.top = top + (maxSize - size)/2 + "px";
+            let randomLeft = left + (maxSize - size)/2 + (Math.random() * 100 - 50);
+            circle.style.left = randomLeft + "px";
+            let randomTop = top + (maxSize - size)/2 + (Math.random() * 100 - 50);
+            circle.style.top = randomTop + "px";
             circle.style.width = circle.style.height = size + "px";
 
             circle.style.borderWidth = (Math.random() * 3) + 2 + "px";
+
+            let radius = 60 * ((maxTop - randomTop - start)/(maxTop - start));
+            if(radius < 0) {
+                radius = 0
+            }
+            circle.style.borderRadius = radius + "%";
 
             circles++;
             switch(circles) {
@@ -37,15 +47,15 @@ window.addEventListener('load', function() {
             circle.style.opacity = (Math.random() * .5) + .1;
 
             parent.append(circle);
-            let speed = 0.02 + (Math.random() * 0.01);
+            let speed = 0.002 + (Math.random() * 0.001);
             if(size > maxSize/2) {
-                speed = 0.01 + (Math.random() * 0.01);
+                speed = 0.001 + (Math.random() * 0.001);
             }
-            shrink(circle, speed, size);
+            shrink(circle, speed, size, size * 0.9);
         }
     }
 
-    function shrink(elem, percent, maxGrow) {
+    function shrink(elem, percent, maxGrow, minGrow) {
         let d = elem.style.width;
         d = parseFloat(d.substr(0, d.length - 2));
         let left = elem.style.left;
@@ -61,14 +71,14 @@ window.addEventListener('load', function() {
 
         elem.style.left = xOffset + (maxSize - newSize)/2 + "px";
         elem.style.top = yOffset + (maxSize - newSize)/2 + "px";
-        if(d > 30) {
-            setTimeout(() => {shrink(elem, percent, maxGrow)}, 16.67);
+        if(d > minGrow) {
+            setTimeout(() => {shrink(elem, percent, maxGrow, minGrow)}, 16.67);
         } else {
-            setTimeout(() => {grow(elem, percent, maxGrow)}, 16.67);
+            setTimeout(() => {grow(elem, percent, maxGrow, minGrow)}, 16.67);
         }
     }
 
-    function grow(elem, percent, maxGrow) {
+    function grow(elem, percent, maxGrow, minGrow) {
         let d = elem.style.width;
         d = parseFloat(d.substr(0, d.length - 2));
         let left = elem.style.left;
@@ -85,9 +95,9 @@ window.addEventListener('load', function() {
         elem.style.left = xOffset + (maxSize - newSize)/2 + "px";
         elem.style.top = yOffset + (maxSize - newSize)/2 + "px";
         if(d > maxGrow) {
-            setTimeout(() => {shrink(elem, percent, maxGrow)}, 16.67);
+            setTimeout(() => {shrink(elem, percent, maxGrow, minGrow)}, 16.67);
         } else {
-            setTimeout(() => {grow(elem, percent, maxGrow)}, 16.67);
+            setTimeout(() => {grow(elem, percent, maxGrow, minGrow)}, 16.67);
         }
     }
 
