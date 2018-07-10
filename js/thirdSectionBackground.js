@@ -20,16 +20,27 @@ window.addEventListener('load', function() {
         square.style.left = start + "vw";
         square.style.bottom = "0";
         square.style.zIndex = parseInt(size) + "";
-        wrapper.append(square);
 
         num++;
+
+        switch(num) {
+            case 1: square.style.borderColor = blue; break;
+            case 2: square.style.borderColor = green; break;
+            case 3: square.style.borderColor = red; break;
+            case 4: square.style.borderColor = yellow; break;
+        }
+        square.style.opacity = 0.1 + "";
+
+        wrapper.append(square);
+
+        let sizeAcc = 0;
 
         for(let i = size - 1; i >= 1; i --) {
             let behind = document.createElement("div");
             behind.className = "testSq";
             behind.style.width = behind.style.height = i + "vw";
             behind.style.left = (start + (size - i)/2) + "vw";
-            behind.style.bottom= "-0vw";
+            behind.style.bottom= (0.5 * (size - i)) + "vw";
             behind.style.zIndex = parseInt(i) + "";
             switch(num) {
                 case 1: behind.style.background = blue; break;
@@ -86,8 +97,7 @@ window.addEventListener('load', function() {
             if(i === 0) {
                 elem.children[i].style.bottom = bot - speed + "px";
             } else {
-                elem.children[i].style.bottom = "";
-                elem.children[i].style.top = "calc(" + (height - bot + speed - (Math.pow(unshiftRatio, 1) * i * 20)) + "px - " + size + "vw)";
+                elem.children[i].style.bottom = "calc(" + (bot - speed + (Math.pow(unshiftRatio, 1) * i * 40)) + "px + " + (0.5 * i) + "vw)";
             }
 
         }
@@ -117,8 +127,11 @@ window.addEventListener('load', function() {
         speed = maxSpeed * ratio;
 
         for(let i = 0; i < elem.children.length; i++) {
-            elem.children[i].style.bottom = bot + speed - (Math.pow(unshiftRatio, 1) * i * 20) + "px";
-            elem.children[i].style.top = "";
+            if(i === 0) {
+                elem.children[i].style.bottom = bot + speed - (Math.pow(unshiftRatio, 1) * i * 20) + "px";
+            } else {
+                elem.children[i].style.bottom = "calc(" + (bot + speed - (Math.pow(unshiftRatio, 1) * i * 40)) + "px + " + (0.5 * i) + "vw)";
+            }
         }
 
         if(bot < finalPos) {
