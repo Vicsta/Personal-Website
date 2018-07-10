@@ -51,7 +51,7 @@ window.addEventListener('load', function() {
             if(size > maxSize/2) {
                 speed = 0.001 + (Math.random() * 0.001);
             }
-            shrink(circle, speed, size, size * 0.9);
+            // shrink(circle, speed, size, size * 0.9);
         }
     }
 

@@ -138,6 +138,23 @@ window.addEventListener("load", function() {
     }
 
     window.addEventListener("scroll", scrollFunc);
+    window.addEventListener("scroll", borders);
+
+    function borders() {
+        let arr = $(".secondInfo").children(".circle");
+        /*
+            TOP = absTop - verticalOffset
+            BOT = end
+            CUR = (document.documentElement.scrollTop || document.body.scrollTop)
+         */
+        let TOP = absTop - verticalOffset;
+        let BOT = end;
+        let CUR = (document.documentElement.scrollTop || document.body.scrollTop);
+        console.log((CUR - TOP) / (BOT - TOP));
+        for(let i = 0; i < arr.length; i ++) {
+            arr[i].style.borderRadius = 60 * (((BOT - TOP) - (CUR - TOP)) / (BOT - TOP)) + "%";
+        }
+    }
 
     function scrollFunc() {
         // Relative location of the top of the scroll into section
