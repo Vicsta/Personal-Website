@@ -17,8 +17,8 @@ window.addEventListener('load', function() {
 
     let start = minTop + (Math.random() * maxSize);
 
-    for(let left = minLeft + (Math.random() * maxSize); left < maxLeft; left += 1.5*maxSize + (Math.random() * maxSize)) {
-        for (let top = start; top < maxTop; top += 1.5*maxSize + (Math.random() * maxSize)) {
+    for(let left = minLeft + (Math.random() * maxSize); left < maxLeft; left += 1.6*maxSize + (Math.random() * maxSize)) {
+        for (let top = start; top < maxTop; top += 1.6*maxSize + (Math.random() * maxSize)) {
             let size = (Math.random() * (maxSize*2/3)) + maxSize/3;
             let circle = document.createElement("div");
             circle.className = "circle";
@@ -30,11 +30,11 @@ window.addEventListener('load', function() {
 
             circle.style.borderWidth = (Math.random() * 3) + 2 + "px";
 
-            let radius = 60 * ((maxTop - randomTop - start)/(maxTop - start));
-            if(radius < 0) {
-                radius = 0
-            }
-            circle.style.borderRadius = radius + "%";
+            // let radius = 60 * ((maxTop - randomTop - start)/(maxTop - start));
+            // if(radius < 0) {
+            //     radius = 0
+            // }
+            // circle.style.borderRadius = radius + "%";
 
             circles++;
             switch(circles) {
