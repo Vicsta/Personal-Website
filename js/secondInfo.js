@@ -133,7 +133,7 @@ window.addEventListener("load", function() {
             // child.style.borderWidth = (width / 70) + "px";
             child.style.borderRadius = width / 40 + "px";
             child.style.height = width * (cardHeight/ cardWidth) + "px";
-            child.style.top = (infoHeight - verticalOffset)/2 - (width * (cardHeight/ cardWidth))/2 + "px"
+            child.style.top = (infoHeight)/2 - (width * (cardHeight/ cardWidth))/2 + "px"
         }
     }
 
