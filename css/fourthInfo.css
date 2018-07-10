@@ -33,16 +33,6 @@
     padding: 0;
 }
 
-.leaf0 {
-    position: absolute;
-    background: url("../images/BlackLeaf0.png") no-repeat;
-    background-size: contain;
-    z-index: -500;
-    display: none;
-    -webkit-transform: translate3d(0, 0, 0);
-    -webkit-backface-visibility: hidden;
-}
-
 .snowflake0 {
     background: url("../images/Snowflake0.png") no-repeat;
     position: absolute;
@@ -155,4 +145,8 @@
     display: none;
     -webkit-transform: translate3d(0, 0, 0);
     -webkit-backface-visibility: hidden;
+}
+
+.leaf0Blue, .leaf0Green, .leaf0Red, .leaf0Yellow, .leaf1Blue, .leaf1Green, .leaf1Red, .leaf1Yellow {
+    opacity: 0.5;
 }

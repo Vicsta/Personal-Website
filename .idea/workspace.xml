@@ -42,7 +42,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fourthInfo.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="fourthInfo.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/fourthInfo.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="51">
@@ -51,11 +51,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fourthInfo.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="fourthInfo.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/fourthInfo.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="643">
-              <caret line="156" column="40" selection-start-line="156" selection-start-column="40" selection-end-line="156" selection-end-column="40" />
+            <state relative-caret-position="592">
+              <caret line="150" column="16" selection-start-line="150" selection-start-column="16" selection-end-line="150" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -163,8 +163,8 @@
         <option value="$PROJECT_DIR$/js/secondInfo.js" />
         <option value="$PROJECT_DIR$/js/secondSectionBackground.js" />
         <option value="$PROJECT_DIR$/css/style.css" />
-        <option value="$PROJECT_DIR$/css/fourthInfo.css" />
         <option value="$PROJECT_DIR$/js/fourthInfo.js" />
+        <option value="$PROJECT_DIR$/css/fourthInfo.css" />
       </list>
     </option>
   </component>
@@ -177,7 +177,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="260" />
     <option name="y" value="20" />
     <option name="width" value="1400" />
@@ -272,12 +272,12 @@
       <workItem from="1530723074939" duration="12761000" />
       <workItem from="1531013983820" duration="22274000" />
       <workItem from="1531101172665" duration="7380000" />
-      <workItem from="1531113674350" duration="41307000" />
+      <workItem from="1531113674350" duration="41443000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="253344000" />
+    <option name="totallyTimeSpent" value="253480000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -633,17 +633,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/fourthInfo.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="643">
-          <caret line="156" column="40" selection-start-line="156" selection-start-column="40" selection-end-line="156" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/fourthInfo.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="44" column="47" selection-start-line="44" selection-start-column="47" selection-end-line="44" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/fourthInfo.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="592">
+          <caret line="150" column="16" selection-start-line="150" selection-start-column="16" selection-end-line="150" selection-end-column="16" />
         </state>
       </provider>
     </entry>
