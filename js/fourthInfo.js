@@ -1,7 +1,7 @@
 window.addEventListener('load',
     function () {
-        let numLeaves = 60;
-        let numSnow = 75;
+        let numLeaves = 50;
+        let numSnow = 50;
         let curLeaves = 0;
         let curSnow = 0;
 
