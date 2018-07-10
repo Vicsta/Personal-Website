@@ -1,7 +1,7 @@
 .fourthInfo {
     height: calc(100vh - 65px);
     background-size: contain;
-    border-top: solid black 2px;
+    /*border-top: solid black 2px;*/
     position: relative;
     overflow: hidden;
 }

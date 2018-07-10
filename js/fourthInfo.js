@@ -1,7 +1,7 @@
 window.addEventListener('load',
     function () {
         let numLeaves = 50;
-        let numSnow = 50;
+        let numSnow = 0;
         let curLeaves = 0;
         let curSnow = 0;
 
@@ -42,7 +42,7 @@ window.addEventListener('load',
         let delta = [];
 
         function randomColor() {
-            switch(Math.floor(Math.random() * 2)) {
+            switch(Math.floor(Math.random() * 4)) {
                 case 0: return "Green";
                 case 1: return "Blue";
                 case 2: return "Red";
