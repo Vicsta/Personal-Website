@@ -1,7 +1,7 @@
 .fourthInfo {
     height: calc(100vh - 65px);
     background-size: contain;
-    /*border-top: solid black 2px;*/
+    border-top: solid black 2px;
     position: relative;
     overflow: hidden;
 }
@@ -33,7 +33,7 @@
     padding: 0;
 }
 
-.leaf0, .leaf1{
+.leaf0 {
     position: absolute;
     background: url("../images/BlackLeaf0.png") no-repeat;
     background-size: contain;
@@ -41,10 +41,6 @@
     display: none;
     -webkit-transform: translate3d(0, 0, 0);
     -webkit-backface-visibility: hidden;
-}
-
-.leaf1 {
-    background: url("../images/BlackLeaf1.png") no-repeat;
 }
 
 .snowflake0 {
@@ -80,6 +76,83 @@
     box-shadow: -3px 3px 15px 0 rgba(0,0,0,.2);
 }
 
-.leaf0, .leaf1, .snowflake0 {
-    opacity: 0.7;
+.leaf1Red {
+    background: url("../images/leaf1Red.png") no-repeat;
+    position: absolute;
+    background-size: contain;
+    z-index: -500;
+    display: none;
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+}
+
+.leaf1Yellow {
+    background: url("../images/leaf1Yellow.png") no-repeat;
+    position: absolute;
+    background-size: contain;
+    z-index: -500;
+    display: none;
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+}
+
+.leaf1Blue {
+    background: url("../images/leaf1Blue.png") no-repeat;
+    position: absolute;
+    background-size: contain;
+    z-index: -500;
+    display: none;
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+}
+
+.leaf1Green {
+    background: url("../images/leaf1Green.png") no-repeat;
+    position: absolute;
+    background-size: contain;
+    z-index: -500;
+    display: none;
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+}
+
+
+.leaf0Red {
+    background: url("../images/leaf0Red.png") no-repeat;
+    position: absolute;
+    background-size: contain;
+    z-index: -500;
+    display: none;
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+}
+
+.leaf0Yellow {
+    background: url("../images/leaf0Yellow.png") no-repeat;
+    position: absolute;
+    background-size: contain;
+    z-index: -500;
+    display: none;
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+}
+
+.leaf0Blue {
+    background: url("../images/leaf0Blue.png") no-repeat;
+    position: absolute;
+    background-size: contain;
+    z-index: -500;
+    display: none;
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+}
+
+.leaf0Green {
+    background: url("../images/leaf0Green.png") no-repeat;
+    position: absolute;
+    background-size: contain;
+    z-index: -500;
+    display: none;
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
 }

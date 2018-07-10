@@ -42,11 +42,11 @@ window.addEventListener('load',
         let delta = [];
 
         function randomColor() {
-            switch(Math.floor(Math.random() * 4)) {
-                case 0: return "Blue";
-                case 1: return "Red";
-                case 2: return "Yellow";
-                case 3: return "Green";
+            switch(Math.floor(Math.random() * 2)) {
+                case 0: return "Green";
+                case 1: return "Blue";
+                case 2: return "Red";
+                case 3: return "Yellow";
             }
         }
 
@@ -64,14 +64,13 @@ window.addEventListener('load',
             speed.push(Math.random() / 6 + .4);
             if (childName === "leaf") {
                 wind.push(Math.random() / 4 + 0.5);
-                newChild.className = childName + Math.floor(Math.random() * 2);
+                newChild.className = "falling " + childName + Math.floor(Math.random() * 2) + randomColor();
                 let random = Math.random() * 15;
                 newChild.style.width = (60 - random) + "px";
                 newChild.style.height = (60 - random) + "px";
-                newChild.style.background = "url(.. /images/" + newChild.className + randomColor() + ".png) no-repeat"
             } else {
                 wind.push(0.2);
-                newChild.className = childName + Math.floor(Math.random());
+                newChild.className = "falling " + childName + Math.floor(Math.random());
                 let random = Math.random() * 5;
                 newChild.style.width = (10 - random) + "px";
                 newChild.style.height = (10 - random) + "px";
