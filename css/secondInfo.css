@@ -28,16 +28,15 @@
     /*background: linear-gradient(35deg, #CCFFFF, #FFCCCC);*/
     position: absolute;
     transform-origin: 50% 50%;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,.2);
 }
 
 .leftCard {
     transform: rotate(45deg);
-    box-shadow: -3px 3px 15px 0 rgba(0,0,0,.5);
 }
 
 .rightCard {
     transform: rotate(-45deg);
-    box-shadow: 3px 3px 15px 0 rgba(0,0,0,.5);
 }
 
 .experienceHeader {

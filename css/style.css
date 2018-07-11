@@ -54,9 +54,6 @@ html,body {
 }
 
 .firstLeft {
-    z-index: 1;
-    background: white;
-    border: 2px solid black;
     width: 50vw;
     height: 40vh;
     margin-left: 10vw;
@@ -65,9 +62,6 @@ html,body {
 }
 
 .firstRight {
-    z-index: 1;
-    background: white;
-    border: 2px solid black;
     width: 50vw;
     height: 40vh;
     margin-right: 10vw;
@@ -76,15 +70,18 @@ html,body {
 }
 
 .firstMiddle {
-    z-index: 1;
-    background: white;
-    border: 2px solid black;
     width: 50vw;
     height: 40vh;
     margin-right: 25vw;
     margin-top: 10vh;
     float: right;
     margin-bottom: 10vh;
+}
+
+.firstLeft, .firstRight, .firstMiddle {
+    z-index: 1;
+    background: white;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,.2);
 }
 
 .circle {
