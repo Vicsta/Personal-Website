@@ -4,24 +4,10 @@
     <list default="true" id="b208448a-368e-4c6b-bb2a-a938b779007c" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/fourthInfo.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/fourthInfo.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/leaf0Black.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/leaf0Blue.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/leaf0Blue.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/leaf0Green.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/leaf0Green.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/leaf0Red.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/leaf0Red.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/leaf0Yellow.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/leaf0Yellow.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/leaf1Black.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/leaf1Blue.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/leaf1Blue.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/leaf1Green.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/leaf1Green.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/leaf1Red.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/leaf1Red.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/leaf1Yellow.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/leaf1Yellow.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/snowflake0Black.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/snowflake0Blue.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/snowflake0Blue.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/snowflake0Green.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/snowflake0Green.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/snowflake0Red.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/snowflake0Red.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/snowflake0Yellow.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/snowflake0Yellow.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/firstSectionBackground.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/firstSectionBackground.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/fourthInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/fourthInfo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/secondInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/secondInfo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/secondInfo.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/secondInfo.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/thirdInfo.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/thirdInfo.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -34,75 +20,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="thirdSectionBackground.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/thirdSectionBackground.js">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1717">
-              <caret line="102" column="9" lean-forward="true" selection-start-line="102" selection-start-column="9" selection-end-line="102" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fourthInfo.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/fourthInfo.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="70" column="60" selection-start-line="70" selection-start-column="60" selection-end-line="70" selection-end-column="60" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fourthInfo.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/fourthInfo.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="13" lean-forward="true" selection-start-column="13" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="secondInfo.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/js/secondInfo.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="488">
-              <caret line="135" column="41" selection-start-line="135" selection-start-column="41" selection-end-line="135" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="firstSectionBackground.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/firstSectionBackground.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="34" column="58" selection-start-line="34" selection-start-column="58" selection-end-line="34" selection-end-column="58" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="secondSectionBackground.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/secondSectionBackground.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-17">
-              <caret line="17" column="45" selection-start-line="17" selection-start-column="45" selection-end-line="17" selection-end-column="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="secondInfo.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/secondInfo.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="23" lean-forward="true" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="thirdInfo.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/thirdInfo.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="23" lean-forward="true" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+            <state relative-caret-position="408">
+              <caret line="91" column="44" selection-start-line="91" selection-start-column="44" selection-end-line="91" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -110,8 +33,44 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="73" column="24" lean-forward="true" selection-start-line="73" selection-start-column="24" selection-end-line="73" selection-end-column="24" />
+            <state relative-caret-position="150">
+              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="secondInfo.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/secondInfo.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="24" column="23" lean-forward="true" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="thirdInfo.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/thirdInfo.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fourthInfo.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/css/fourthInfo.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="578">
+              <caret line="67" column="17" selection-start-line="67" selection-start-column="17" selection-end-line="67" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fourthInfo.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/fourthInfo.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1190">
+              <caret line="70" column="60" selection-start-line="70" selection-start-column="60" selection-end-line="70" selection-end-column="60" />
             </state>
           </provider>
         </entry>
@@ -159,16 +118,16 @@
         <option value="$PROJECT_DIR$/css/topBar.css" />
         <option value="$USER_HOME$/Desktop/test.js" />
         <option value="$PROJECT_DIR$/js/secondSecntionBackground.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/thirdSectionBackground.js" />
-        <option value="$PROJECT_DIR$/css/thirdInfo.css" />
-        <option value="$PROJECT_DIR$/css/secondInfo.css" />
         <option value="$PROJECT_DIR$/js/secondSectionBackground.js" />
-        <option value="$PROJECT_DIR$/css/style.css" />
-        <option value="$PROJECT_DIR$/css/fourthInfo.css" />
         <option value="$PROJECT_DIR$/js/fourthInfo.js" />
         <option value="$PROJECT_DIR$/js/firstSectionBackground.js" />
         <option value="$PROJECT_DIR$/js/secondInfo.js" />
+        <option value="$PROJECT_DIR$/css/style.css" />
+        <option value="$PROJECT_DIR$/css/secondInfo.css" />
+        <option value="$PROJECT_DIR$/css/thirdInfo.css" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/css/fourthInfo.css" />
       </list>
     </option>
   </component>
@@ -271,12 +230,14 @@
       <workItem from="1530723074939" duration="12761000" />
       <workItem from="1531013983820" duration="22274000" />
       <workItem from="1531101172665" duration="7380000" />
-      <workItem from="1531113674350" duration="44505000" />
+      <workItem from="1531113674350" duration="44948000" />
+      <workItem from="1531270605221" duration="157000" />
+      <workItem from="1531280879660" duration="1257000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="256542000" />
+    <option name="totallyTimeSpent" value="258399000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -544,13 +505,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="609">
-          <caret line="84" column="25" selection-start-line="84" selection-start-column="25" selection-end-line="84" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/javascript.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="697">
@@ -558,58 +512,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/thirdInfo.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="23" lean-forward="true" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="73" column="24" lean-forward="true" selection-start-line="73" selection-start-column="24" selection-end-line="73" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/images/leaf1Yellow.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/images/leaf0Black.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/secondInfo.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="23" lean-forward="true" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/fourthInfo.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="13" lean-forward="true" selection-start-column="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/thirdSectionBackground.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1717">
-          <caret line="102" column="9" lean-forward="true" selection-start-line="102" selection-start-column="9" selection-end-line="102" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/images/leaf0Black.png" />
     <entry file="file://$PROJECT_DIR$/js/secondSectionBackground.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-17">
           <caret line="17" column="45" selection-start-line="17" selection-start-column="45" selection-end-line="17" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/fourthInfo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="70" column="60" selection-start-line="70" selection-start-column="60" selection-end-line="70" selection-end-column="60" />
         </state>
       </provider>
     </entry>
@@ -624,6 +534,55 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="488">
           <caret line="135" column="41" selection-start-line="135" selection-start-column="41" selection-end-line="135" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/thirdSectionBackground.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1717">
+          <caret line="102" column="9" lean-forward="true" selection-start-line="102" selection-start-column="9" selection-end-line="102" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/fourthInfo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1190">
+          <caret line="70" column="60" selection-start-line="70" selection-start-column="60" selection-end-line="70" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/secondInfo.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="24" column="23" lean-forward="true" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/thirdInfo.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="91" column="44" selection-start-line="91" selection-start-column="44" selection-end-line="91" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/fourthInfo.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="67" column="17" selection-start-line="67" selection-start-column="17" selection-end-line="67" selection-end-column="17" />
         </state>
       </provider>
     </entry>

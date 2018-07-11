@@ -46,3 +46,14 @@
     margin-left: 10vw;
     margin-bottom: 10vh;
 }
+
+.aboutHeader {
+    margin-left: 20vw;
+    margin-top: 10vh;
+    float: left;
+    width: 20vw;
+    font-weight: bold;
+    font-family: "Georgia";
+    font-size: 5vw;
+    background: rgba(255, 255, 255, 0.7);
+}

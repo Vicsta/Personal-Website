@@ -64,6 +64,8 @@
     border-top-right-radius: 5vw;
     margin-left: 5vw;
     box-shadow: -3px 3px 15px 0 rgba(0,0,0,.2);
+    position: absolute;
+    bottom: 10vh;
 }
 
 .leaf1Red {
@@ -149,4 +151,15 @@
 
 .leaf0Blue, .leaf0Green, .leaf0Red, .leaf0Yellow, .leaf1Blue, .leaf1Green, .leaf1Red, .leaf1Yellow {
     opacity: 0.5;
+}
+
+.contactHeader {
+    margin-left: 15vw;
+    margin-top: 10vh;
+    float: left;
+    width: 27vw;
+    font-weight: bold;
+    font-family: "Georgia";
+    font-size: 5vw;
+    background: rgba(255, 255, 255, 0.7);
 }
