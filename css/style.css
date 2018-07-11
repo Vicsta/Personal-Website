@@ -33,14 +33,15 @@ html,body {
 }
 
 .homeHeader {
-    margin-left: 10vw;
+    margin-left: 12.5vw;
     float: left;
-    width: 22vw;
+    width: 14vw;
     margin-top: 10vh;
     font-weight: bold;
     font-family: "Georgia";
-    font-size: 5vw;
+    font-size: 3vw;
     background: rgba(255, 255, 255, 0.7);
+    user-select: none;
 }
 
 .firstInfo {

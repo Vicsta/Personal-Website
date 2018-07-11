@@ -41,11 +41,12 @@
 }
 
 .experienceHeader {
-    margin-left: 32vw;
+    margin-left: 39vw;
     float: left;
-    width: 36vw;
+    width: 22vw;
     font-weight: bold;
     font-family: "Georgia";
-    font-size: 5vw;
+    font-size: 3vw;
     background: rgba(255, 255, 255, 0.7);
+    user-select: none
 }

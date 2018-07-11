@@ -48,12 +48,13 @@
 }
 
 .aboutHeader {
-    margin-left: 20vw;
+    margin-left: 22vw;
     margin-top: 10vh;
     float: left;
-    width: 20vw;
+    width: 12vw;
     font-weight: bold;
     font-family: "Georgia";
-    font-size: 5vw;
+    font-size: 3vw;
     background: rgba(255, 255, 255, 0.7);
+    user-select: none
 }

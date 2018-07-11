@@ -154,12 +154,13 @@
 }
 
 .contactHeader {
-    margin-left: 15vw;
+    margin-left: 19vw;
     margin-top: 10vh;
     float: left;
-    width: 27vw;
+    width: 16vw;
     font-weight: bold;
     font-family: "Georgia";
-    font-size: 5vw;
+    font-size: 3vw;
     background: rgba(255, 255, 255, 0.7);
+    user-select: none;
 }
