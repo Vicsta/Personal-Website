@@ -95,10 +95,10 @@ window.addEventListener('load',
             moving = true;
             console.log(word + " " + index);
             for(let i = 0; i < word.length; i ++) {
-                setTimeout(() => {writeLetter(elem, word.charAt(i))}, 200 * i);
+                setTimeout(() => {writeLetter(elem, word.charAt(i))}, 100 * i);
             }
-            setTimeout(() => {moving = false}, word.length * 200);
-            setTimeout(() => {deleteWords(elem)} , 200 * word.length + 3000);
+            setTimeout(() => {moving = false}, word.length * 100);
+            setTimeout(() => {deleteWords(elem)} , 100 * word.length + 3000);
         }
 
         function writeLetter(elem, letter) {
@@ -111,9 +111,9 @@ window.addEventListener('load',
             console.log(elem.innerText);
             console.log(elem.innerHTML);
             for(let i = 0; i < size; i ++) {
-                setTimeout(() => { elem.innerText = elem.innerText.substr(0, elem.innerText.length - 1); }, 150 * i);
+                setTimeout(() => { elem.innerText = elem.innerText.substr(0, elem.innerText.length - 1); }, 100 * i);
             }
-            setTimeout(() => {moving = false}, (size) * 150);
+            setTimeout(() => {moving = false}, (size) * 100);
             setTimeout(() => {
                 if(index > words.length - 1) {
                     index = 0;
