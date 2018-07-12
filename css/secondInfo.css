@@ -7,11 +7,11 @@
 }
 
 .boxDate {
-    height: 50px;
+    font-weight: bold;
 }
 
 .boxTitle {
-
+    font-weight: bold;
 }
 
 .boxDesc{
@@ -19,7 +19,10 @@
 }
 
 .boxPic {
-
+    width: 30%;
+    position: absolute;
+    bottom: 0;
+    left: 35%;
 }
 
 .leftCard, .rightCard {

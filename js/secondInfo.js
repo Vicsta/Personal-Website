@@ -129,7 +129,10 @@ window.addEventListener("load", function() {
             // 700 start position minus the original position of left offset by how far we've scrolled. Returns 0 when not scrolled
 
             child.style.width = width + "px";
-            child.style.fontSize = width / 20 + "px";
+            child.style.padding = width/15 + "px " + width/10 + "px";
+            child.style.fontSize = width / 19 + "px";
+            child.children[1].style.marginBottom = width/35 + "px";
+            child.children[3].style.bottom = width/15 + "px";
             // child.style.borderWidth = (width / 70) + "px";
             child.style.borderRadius = width / 40 + "px";
             child.style.height = width * (cardHeight/ cardWidth) + "px";
