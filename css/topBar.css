@@ -7,6 +7,10 @@
 }
 
 .topBar {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
     z-index: 666;
     position: fixed;
     width: 100vw;
@@ -29,19 +33,19 @@
 }
 
 .topHome {
-    left: 37vw;
+    left: 38vw;
 }
 
 .topAbout {
-    left: 50.5vw;
+    left: 51.5vw;
 }
 
 .topExp {
-    left: 42vw;
+    left: 43vw;
 }
 
 .topContact{
-    left: 56vw;
+    left: 57vw;
 }
 
 .div1, .div2, .div3 {
@@ -52,15 +56,15 @@
 }
 
 .div1 {
-    left: 41vw;
+    left: 42vw;
 }
 
 .div2 {
-    left: 49.5vw;
+    left: 50.5vw;
 }
 
 .div3 {
-    left: 55vw;
+    left: 56vw;
 }
 
 .topLink:before {
