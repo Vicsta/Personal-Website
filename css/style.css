@@ -61,7 +61,7 @@ html,body {
 
 .firstRight {
     width: 50vw;
-    height: 40vh;
+    /*height: 40vh;*/
     margin-right: 10vw;
     margin-top: 10vh;
     float: right;
