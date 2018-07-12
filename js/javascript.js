@@ -55,12 +55,19 @@ window.addEventListener('load',
             }
         });
 
-        let cursor = document.getElementById("pulse");
+        let moving = false;
+        let words = ["<Software></Developer>", "<Entrepreneur/>"];
+        let index = 0;
 
-        downOpacity(cursor, 1);
+        downOpacity(document.getElementById("pulse"), 1);
 
         function upOpacity(elem, opac) {
             elem.style.opacity = opac;
+            if(moving) {
+                elem.style.opacity = 1;
+            } else {
+                elem.style.opacity = opac;
+            }
             if(opac > 1) {
                 setTimeout(() => { downOpacity(elem, opac - 0.05) }, 16.67);
             } else {
@@ -69,12 +76,50 @@ window.addEventListener('load',
         }
 
         function downOpacity(elem, opac) {
-            elem.style.opacity = opac;
+            if(moving) {
+                elem.style.opacity = 1;
+            } else {
+                elem.style.opacity = opac;
+            }
             if(opac > 0) {
                 setTimeout(() => { downOpacity(elem, opac - 0.05) }, 16.67);
             } else {
                 setTimeout(() => { upOpacity(elem, opac + 0.05) }, 16.67);
             }
+        }
+
+        writeWords(document.getElementById("writeText"), words[index]);
+
+        function writeWords(elem, word) {
+            index++;
+            moving = true;
+            console.log(word + " " + index);
+            for(let i = 0; i < word.length; i ++) {
+                setTimeout(() => {writeLetter(elem, word.charAt(i))}, 200 * i);
+            }
+            setTimeout(() => {moving = false}, word.length * 200);
+            setTimeout(() => {deleteWords(elem)} , 200 * word.length + 3000);
+        }
+
+        function writeLetter(elem, letter) {
+            elem.innerText += letter;
+        }
+
+        function deleteWords(elem) {
+            moving = true;
+            let size = elem.innerText.length;
+            console.log(elem.innerText);
+            console.log(elem.innerHTML);
+            for(let i = 0; i < size; i ++) {
+                setTimeout(() => { elem.innerText = elem.innerText.substr(0, elem.innerText.length - 1); }, 150 * i);
+            }
+            setTimeout(() => {moving = false}, (size) * 150);
+            setTimeout(() => {
+                if(index > words.length - 1) {
+                    index = 0;
+                }
+                writeWords(document.getElementById("writeText"), words[index]);
+                }, (size) * 150 + 1500);
         }
 
     }, false);
