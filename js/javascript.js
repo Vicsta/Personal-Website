@@ -55,6 +55,28 @@ window.addEventListener('load',
             }
         });
 
+        let cursor = document.getElementById("pulse");
+
+        downOpacity(cursor, 1);
+
+        function upOpacity(elem, opac) {
+            elem.style.opacity = opac;
+            if(opac > 1) {
+                setTimeout(() => { downOpacity(elem, opac - 0.05) }, 16.67);
+            } else {
+                setTimeout(() => { upOpacity(elem, opac + 0.05) }, 16.67);
+            }
+        }
+
+        function downOpacity(elem, opac) {
+            elem.style.opacity = opac;
+            if(opac > 0) {
+                setTimeout(() => { downOpacity(elem, opac - 0.05) }, 16.67);
+            } else {
+                setTimeout(() => { upOpacity(elem, opac + 0.05) }, 16.67);
+            }
+        }
+
     }, false);
 
 
