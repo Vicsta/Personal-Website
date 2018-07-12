@@ -132,7 +132,7 @@ window.addEventListener("load", function() {
             child.style.padding = width/15 + "px " + width/10 + "px";
             child.style.fontSize = width / 19 + "px";
             child.children[1].style.marginBottom = width/35 + "px";
-            child.children[3].style.bottom = width/15 + "px";
+            child.children[3].children[0].style.bottom = width/15 + "px";
             // child.style.borderWidth = (width / 70) + "px";
             child.style.borderRadius = width / 40 + "px";
             child.style.height = width * (cardHeight/ cardWidth) + "px";
