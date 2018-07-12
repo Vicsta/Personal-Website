@@ -63,6 +63,7 @@
     margin-left: 5vw;
     position: absolute;
     bottom: 10vh;
+    padding: 4vh 3vw;
 }
 
 .leaf1Red {
@@ -160,4 +161,45 @@
     font-size: 3vw;
     background: rgba(255, 255, 255, 0.7);
     user-select: none;
+}
+
+#logoHold {
+    position: relative;
+    width: 29vw;
+    height: 20vh;
+}
+
+.logoTest {
+    position: absolute;
+    width: 5.8vw;
+    height: 5.8vw;
+    border: white solid .5vw;
+    float: left;
+    border-radius: 20%;
+}
+
+.logoTest:hover {
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+#logoOne {
+    bottom: 0;
+}
+
+#logoTwo {
+    left: 5.8vw;
+}
+
+#logoThree {
+    left: 11.6vw;
+    bottom: 0;
+}
+
+#logoFour {
+    left: 17.4vw;
+}
+
+#logoFive {
+    left: 23.2vw;
+    bottom: 0;
 }
