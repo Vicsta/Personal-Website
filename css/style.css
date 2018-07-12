@@ -117,8 +117,8 @@ html,body {
     100% {opacity: 1;}
 }
 
-.firstUl {
-
+.noPad {
+    padding: 0;
 }
 
 .boxPic:hover{

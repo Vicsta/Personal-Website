@@ -133,6 +133,9 @@ window.addEventListener("load", function() {
             child.style.fontSize = width / 19 + "px";
             child.children[1].style.marginBottom = width/35 + "px";
             child.children[3].children[0].style.bottom = width/15 + "px";
+            if(i === 1) {
+                child.children[2].children[1].style.paddingLeft = width/15 + "px";
+            }
             // child.style.borderWidth = (width / 70) + "px";
             child.style.borderRadius = width / 40 + "px";
             child.style.height = width * (cardHeight/ cardWidth) + "px";
