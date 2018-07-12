@@ -93,7 +93,6 @@ window.addEventListener('load',
         function writeWords(elem, word) {
             index++;
             moving = true;
-            console.log(word + " " + index);
             for(let i = 0; i < word.length; i ++) {
                 setTimeout(() => {writeLetter(elem, word.charAt(i))}, 100 * i);
             }
@@ -108,8 +107,6 @@ window.addEventListener('load',
         function deleteWords(elem) {
             moving = true;
             let size = elem.innerText.length;
-            console.log(elem.innerText);
-            console.log(elem.innerHTML);
             for(let i = 0; i < size; i ++) {
                 setTimeout(() => { elem.innerText = elem.innerText.substr(0, elem.innerText.length - 1); }, 100 * i);
             }

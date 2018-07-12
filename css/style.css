@@ -69,7 +69,7 @@ html,body {
 
 .firstMiddle {
     width: 50vw;
-    height: 40vh;
+    /*height: 40vh;*/
     margin-right: 25vw;
     margin-top: 10vh;
     float: right;
@@ -115,4 +115,8 @@ html,body {
     50% {opacity: 0;}
     75% {opacity: .25;}
     100% {opacity: 1;}
+}
+
+.firstUl {
+
 }
