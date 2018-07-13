@@ -103,6 +103,12 @@ window.addEventListener("load", function() {
 
             let width = (screenMid - newLoc) * 0.4 + cardWidth;
 
+            if(newLoc + width < 0) {
+                if(child.style.transform !== "") {
+                    continue;
+                }
+            }
+
             /*
 
             (cards[i]["left"] - (scrolled * speed)) - ((screenMid - newLoc) * 0.4 + 105)/2

@@ -25,8 +25,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="143" column="24" selection-start-line="143" selection-start-column="24" selection-end-line="143" selection-end-column="24" />
+            <state relative-caret-position="187">
+              <caret line="145" column="56" selection-start-line="145" selection-start-column="56" selection-end-line="145" selection-end-column="56" />
             </state>
           </provider>
         </entry>
@@ -58,11 +58,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="secondInfo.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="secondInfo.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/secondInfo.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="269">
-              <caret line="134" selection-start-line="134" selection-end-line="134" />
+            <state relative-caret-position="340">
+              <caret line="105" selection-start-line="105" selection-end-line="109" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -76,7 +76,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="thirdInfo.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="thirdInfo.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/thirdInfo.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="595">
@@ -156,9 +156,9 @@
         <option value="$PROJECT_DIR$/js/javascript.js" />
         <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/css/secondInfo.css" />
-        <option value="$PROJECT_DIR$/js/secondInfo.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/css/thirdInfo.css" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/js/secondInfo.js" />
       </list>
     </option>
   </component>
@@ -280,12 +280,12 @@
       <workItem from="1531113674350" duration="44948000" />
       <workItem from="1531270605221" duration="157000" />
       <workItem from="1531280879660" duration="4488000" />
-      <workItem from="1531339631591" duration="49144000" />
+      <workItem from="1531339631591" duration="50058000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="310774000" />
+    <option name="totallyTimeSpent" value="311688000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -583,13 +583,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/secondInfo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="134" selection-start-line="134" selection-end-line="134" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/fourthInfo.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="82">
@@ -604,17 +597,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="143" column="24" selection-start-line="143" selection-start-column="24" selection-end-line="143" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/thirdInfo.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="595">
           <caret line="45" column="12" lean-forward="true" selection-start-line="45" selection-start-column="12" selection-end-line="45" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="145" column="56" selection-start-line="145" selection-start-column="56" selection-end-line="145" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/secondInfo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="105" selection-start-line="105" selection-end-line="109" selection-end-column="13" />
         </state>
       </provider>
     </entry>
