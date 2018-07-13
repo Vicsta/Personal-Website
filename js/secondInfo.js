@@ -135,6 +135,9 @@ window.addEventListener("load", function() {
             child.children[3].children[0].style.bottom = width/15 + "px";
             if(i === 1) {
                 child.children[2].children[1].style.paddingLeft = width/15 + "px";
+                child.children[2].children[1].style.lineHeight = width / 15 + "px";
+            } else if(i === 4) {
+                child.children[2].children[2].style.fontSize = width / 27 + "px";
             }
             // child.style.borderWidth = (width / 70) + "px";
             child.style.borderRadius = width / 40 + "px";
