@@ -130,6 +130,7 @@ window.addEventListener("load", function() {
 
             child.style.width = width + "px";
             child.style.padding = width/15 + "px " + width/10 + "px";
+            console.log(getComputedStyle(child).fontSize);
             child.style.fontSize = width / 19 + "px";
             child.children[1].style.marginBottom = width/35 + "px";
             child.children[3].children[0].style.bottom = width/15 + "px";
