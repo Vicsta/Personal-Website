@@ -101,13 +101,7 @@ window.addEventListener("load", function() {
                 newLoc = screenMid;
             }
 
-            let width = (screenMid - newLoc) * 0.4 + cardWidth;
-
-            if(newLoc + width < 0) {
-                if(child.style.transform !== "") {
-                    continue;
-                }
-            }
+            // let width = (screenMid - newLoc) * 0.4 + cardWidth;
 
             /*
 
@@ -120,21 +114,33 @@ window.addEventListener("load", function() {
             //     end = cur;
             // }
 
+            let cardLoc = newLoc; //- width/2;
+
             if(i % 2 === 0) {
-                child.style.left = newLoc - width/2 + "px";
+                child.style.left = newLoc - cardWidth/2 + "px";
             } else {
-                child.style.right = newLoc - width/2 + "px";
+                child.style.right = newLoc - cardWidth/2 + "px";
             }
 
-            if(newLoc < screenMid/2) {
-                child.style.transform = "rotate(0)"
-            } else {
-                child.style.transform = "rotate(" + ((newLoc - screenMid/2)/(screenMid/2) * ((i % 2 === 0) ? -45 : 45)) + "deg)";
+            let scale = 1 + ((screenMid - newLoc) / screenMid) * 2.5;
+
+            if(newLoc + (scale * cardWidth)/2 < 0) {
+                scale = 0;
             }
+
+            child.style.top = infoHeight/2 - (cardHeight)/2 + "px";
+
+            if(newLoc < screenMid/2) {
+                child.style.transform = "rotate(0) scale(" + scale + ")";
+            } else {
+                child.style.transform = "rotate(" + ((newLoc - screenMid/2)/(screenMid/2) * ((i % 2 === 0) ? -45 : 45)) + "deg) scale(" + scale + ")";
+            }
+
+            // child.style.top = (infoHeight)/2 - (width * (cardHeight/ cardWidth))/2 + "px";
 
             // 700 start position minus the original position of left offset by how far we've scrolled. Returns 0 when not scrolled
 
-            child.style.width = width + "px";
+            /*child.style.width = width + "px";
             child.style.padding = width/15 + "px " + width/10 + "px";
             console.log(getComputedStyle(child).fontSize);
             child.style.fontSize = width / 19 + "px";
@@ -148,8 +154,7 @@ window.addEventListener("load", function() {
             }
             // child.style.borderWidth = (width / 70) + "px";
             child.style.borderRadius = width / 40 + "px";
-            child.style.height = width * (cardHeight/ cardWidth) + "px";
-            child.style.top = (infoHeight)/2 - (width * (cardHeight/ cardWidth))/2 + "px"
+            child.style.height = width * (cardHeight/ cardWidth) + "px";*/
         }
     }
 
